@@ -1,0 +1,10 @@
+File,max_complexity,n-revs,predicted_revs_log_model
+tests/test_adapters.py,1,2,17.7
+tests/test_testserver.py,2,18,20.7
+requests/compat.py,4,46,28.3
+tests/compat.py,1,8,17.7
+requests/cookies.py,9,86,61.1
+tests/test_utils.py,4,78,28.3
+tests/conftest.py,2,8,20.7
+requests/models.py,21,761,375.6
+tests/utils.py,4,4,28.3

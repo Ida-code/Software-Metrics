@@ -1,0 +1,6 @@
+repo,commits_no_merge,cutoff_date,src_files_at_cutoff,closed_issues,bug_labelled_issues,bug_issues_with_closing_commit,issue_fix_commits,keyword_fix_commits,pos_issue_post_cutoff,pos_issue_rate_pct,pos_keyword_post_cutoff,pos_keyword_rate_pct,pos_either_post_cutoff,fixed_post_cutoff_but_new_or_renamed_issue,fixed_post_cutoff_but_new_or_renamed_keyword,files_with_any_issue_fix_ever,files_with_any_keyword_fix_ever,issue_stats,keyword_stats,verdict
+requests,4882,2017-07-06,18,4024,186,8,16,419,0,0.0,9,50.0,9,0,6,9,42,{},{},TOO FEW issue-based positives
+httpx,1482,2022-01-24,22,861,98,0,3,73,1,4.5,11,50.0,11,0,2,6,33,{},{},TOO FEW issue-based positives
+flask,3825,2019-05-17,20,2766,36,4,9,350,0,0.0,4,20.0,4,0,17,6,51,{},"{""skipped_bulk_commit"": 1}",TOO FEW issue-based positives
+click,2162,2021-05-20,17,1736,0,0,0,234,0,0.0,13,76.5,13,0,1,0,33,{},{},TOO FEW issue-based positives
+rich,3387,2022-02-11,75,1291,74,0,0,300,0,0.0,29,38.7,29,0,3,0,70,{},{},TOO FEW issue-based positives

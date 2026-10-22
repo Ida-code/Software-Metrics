@@ -1,0 +1,63 @@
+{
+  "evaluation_method": "leave-one-repository-out cross-validation",
+  "target": "historical change-proneness from revision-count quantiles",
+  "feature_set": [
+    "avg_complexity",
+    "max_complexity",
+    "total_nloc",
+    "function_count",
+    "maintainability_index",
+    "num_authors",
+    "code_age_days",
+    "coupling_partner_count",
+    "avg_coupling_degree"
+  ],
+  "rows": 381,
+  "repositories": [
+    {
+      "repository": "click",
+      "rows": 81,
+      "f1_macro": 0.7791806958473625,
+      "accuracy": 0.8024691358024691,
+      "train_low_max_revisions": 9.0,
+      "train_medium_max_revisions": 28.0
+    },
+    {
+      "repository": "flask",
+      "rows": 63,
+      "f1_macro": 0.7342433342433342,
+      "accuracy": 0.7301587301587301,
+      "train_low_max_revisions": 7.0,
+      "train_medium_max_revisions": 27.0
+    },
+    {
+      "repository": "httpx",
+      "rows": 54,
+      "f1_macro": 0.7607908660540238,
+      "accuracy": 0.7407407407407407,
+      "train_low_max_revisions": 6.0,
+      "train_medium_max_revisions": 25.159999999999997
+    },
+    {
+      "repository": "requests",
+      "rows": 29,
+      "f1_macro": 0.5462962962962963,
+      "accuracy": 0.5517241379310345,
+      "train_low_max_revisions": 7.0,
+      "train_medium_max_revisions": 26.0
+    },
+    {
+      "repository": "rich",
+      "rows": 154,
+      "f1_macro": 0.7085426211109271,
+      "accuracy": 0.7337662337662337,
+      "train_low_max_revisions": 7.0,
+      "train_medium_max_revisions": 31.0
+    }
+  ],
+  "overall_oof_f1_macro": 0.735043102946109,
+  "overall_oof_accuracy": 0.7349081364829396,
+  "mean_repository_f1_macro": 0.7058107627103888,
+  "note": "Each held-out repository is labeled using revision-count cutoffs calculated only from the other repositories. Features are whole-history aggregates, so this is cross-repository generalization, not a future-time prediction evaluation.",
+  "timestamp_utc": "2026-10-22T07:51:13.239419+00:00"
+}

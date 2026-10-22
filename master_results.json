@@ -1,0 +1,54 @@
+{
+  "f1": 0.7844377555393713,
+  "evaluation_method": "5-fold stratified cross-validation",
+  "folds": 5,
+  "rows": 381,
+  "random_seed": 42,
+  "feature_importance": [
+    {
+      "feature": "num_authors",
+      "importance": 0.2803074575192219
+    },
+    {
+      "feature": "total_nloc",
+      "importance": 0.23756087419350586
+    },
+    {
+      "feature": "function_count",
+      "importance": 0.10899249912356673
+    },
+    {
+      "feature": "code_age_days",
+      "importance": 0.10558891132922957
+    },
+    {
+      "feature": "maintainability_index",
+      "importance": 0.0996028521411378
+    },
+    {
+      "feature": "max_complexity",
+      "importance": 0.05922209768241661
+    },
+    {
+      "feature": "avg_complexity",
+      "importance": 0.0585516691812528
+    },
+    {
+      "feature": "avg_coupling_degree",
+      "importance": 0.028978760225108948
+    },
+    {
+      "feature": "coupling_partner_count",
+      "importance": 0.02119487860455967
+    }
+  ],
+  "repository_holdout_f1_macro": 0.735043102946109,
+  "repository_holdout_accuracy": 0.7349081364829396,
+  "repository_holdout_method": "leave-one-repository-out cross-validation",
+  "timestamp_utc": "2026-10-22T07:51:13.427109+00:00",
+  "library_versions": {
+    "pandas": "3.0.1",
+    "numpy": "2.4.2",
+    "scikit-learn": "1.8.0"
+  }
+}

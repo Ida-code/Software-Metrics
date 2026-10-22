@@ -1,0 +1,689 @@
+NLOC,CCN,Token_Count,Parameter_Count,Length,Long_Name,File_Path,Function_Name,Signature,Start_Line,End_Line
+2,1,20,2,2,SOCKSProxyManager@66-67@.\src\requests\adapters.py,.\src\requests\adapters.py,SOCKSProxyManager,"SOCKSProxyManager( * args : Any , ** kwargs : Any )",66,67
+32,7,213,4,35,_urllib3_request_context@85-119@.\src\requests\adapters.py,.\src\requests\adapters.py,_urllib3_request_context,"_urllib3_request_context( request : PreparedRequest , verify : bool | str | None , client_cert : tuple [ str , str ] | str | None , poolmanager : PoolManager , )",85,119
+2,1,14,1,2,__init__@125-126@.\src\requests\adapters.py,.\src\requests\adapters.py,__init__,__init__( self ),125,126
+10,1,58,7,24,send@128-151@.\src\requests\adapters.py,.\src\requests\adapters.py,send,"send( self , request : PreparedRequest , stream : bool = False , timeout : _t . TimeoutType = None , verify : _t . VerifyType = True , cert : _t . CertType = None , proxies : dict [ str , str ] | None = None , )",128,151
+2,1,10,1,3,close@153-155@.\src\requests\adapters.py,.\src\requests\adapters.py,close,close( self ),153,155
+18,2,109,5,21,__init__@201-221@.\src\requests\adapters.py,.\src\requests\adapters.py,__init__,"__init__( self , pool_connections : int = DEFAULT_POOLSIZE , pool_maxsize : int = DEFAULT_POOLSIZE , max_retries : int | Retry = DEFAULT_RETRIES , pool_block : bool = DEFAULT_POOLBLOCK , )",201,221
+2,2,31,1,2,__getstate__@223-224@.\src\requests\adapters.py,.\src\requests\adapters.py,__getstate__,__getstate__( self ),223,224
+8,2,65,2,12,__setstate__@226-237@.\src\requests\adapters.py,.\src\requests\adapters.py,__setstate__,"__setstate__( self , state : dict [ str , Any ] )",226,237
+16,1,65,5,29,init_poolmanager@239-267@.\src\requests\adapters.py,.\src\requests\adapters.py,init_poolmanager,"init_poolmanager( self , connections : int , maxsize : int , block : bool = DEFAULT_POOLBLOCK , ** pool_kwargs : Any , )",239,267
+25,3,146,3,37,proxy_manager_for@269-305@.\src\requests\adapters.py,.\src\requests\adapters.py,proxy_manager_for,"proxy_manager_for( self , proxy : str , ** proxy_kwargs : Any )",269,305
+39,14,223,5,57,cert_verify@307-363@.\src\requests\adapters.py,.\src\requests\adapters.py,cert_verify,"cert_verify( self , conn : Any , url : str , verify : _t . VerifyType , cert : _t . CertType )",307,363
+16,2,131,3,37,build_response@365-401@.\src\requests\adapters.py,.\src\requests\adapters.py,build_response,"build_response( self , req : PreparedRequest , resp : Any )",365,401
+4,1,54,4,51,build_connection_pool_key_attributes@403-453@.\src\requests\adapters.py,.\src\requests\adapters.py,build_connection_pool_key_attributes,"build_connection_pool_key_attributes( self , request : PreparedRequest , verify : _t . VerifyType , cert : _t . CertType = None )",403,453
+34,4,155,5,56,get_connection_with_tls_context@455-510@.\src\requests\adapters.py,.\src\requests\adapters.py,get_connection_with_tls_context,"get_connection_with_tls_context( self , request : PreparedRequest , verify : _t . VerifyType , proxies : dict [ str , str ] | None = None , cert : _t . CertType = None , )",455,510
+28,3,119,3,42,get_connection@512-553@.\src\requests\adapters.py,.\src\requests\adapters.py,get_connection,"get_connection( self , url : str , proxies : dict [ str , str ] | None = None )",512,553
+4,2,31,1,9,close@555-563@.\src\requests\adapters.py,.\src\requests\adapters.py,close,close( self ),555,563
+15,5,102,3,33,request_url@565-597@.\src\requests\adapters.py,.\src\requests\adapters.py,request_url,"request_url( self , request : PreparedRequest , proxies : dict [ str , str ] | None )",565,597
+2,1,18,3,13,add_headers@599-611@.\src\requests\adapters.py,.\src\requests\adapters.py,add_headers,"add_headers( self , request : PreparedRequest , ** kwargs : Any )",599,611
+6,2,52,2,20,proxy_headers@613-632@.\src\requests\adapters.py,.\src\requests\adapters.py,proxy_headers,"proxy_headers( self , proxy : str )",613,632
+81,19,503,7,115,send@634-748@.\src\requests\adapters.py,.\src\requests\adapters.py,send,"send( self , request : PreparedRequest , stream : bool = False , timeout : _t . TimeoutType = None , verify : _t . VerifyType = True , cert : _t . CertType = None , proxies : dict [ str , str ] | None = None , )",634,748
+5,1,51,3,48,request@24-71@.\src\requests\api.py,.\src\requests\api.py,request,"request( method : str , url : _t . UriType , ** kwargs : Unpack [ _t . RequestKwargs ] )",24,71
+4,1,45,3,14,get@74-87@.\src\requests\api.py,.\src\requests\api.py,get,"get( url : _t . UriType , params : _t . ParamsType = None , ** kwargs : Unpack [ _t . GetKwargs ] )",74,87
+2,1,33,2,10,options@90-99@.\src\requests\api.py,.\src\requests\api.py,options,"options( url : _t . UriType , ** kwargs : Unpack [ _t . RequestKwargs ] )",90,99
+3,1,41,2,13,head@102-114@.\src\requests\api.py,.\src\requests\api.py,head,"head( url : _t . UriType , ** kwargs : Unpack [ _t . RequestKwargs ] )",102,114
+7,1,58,4,18,post@117-134@.\src\requests\api.py,.\src\requests\api.py,post,"post( url : _t . UriType , data : _t . DataType = None , json : _t . JsonType = None , ** kwargs : Unpack [ _t . PostKwargs ] , )",117,134
+4,1,45,3,15,put@137-151@.\src\requests\api.py,.\src\requests\api.py,put,"put( url : _t . UriType , data : _t . DataType = None , ** kwargs : Unpack [ _t . DataKwargs ] )",137,151
+4,1,45,3,15,patch@154-168@.\src\requests\api.py,.\src\requests\api.py,patch,"patch( url : _t . UriType , data : _t . DataType = None , ** kwargs : Unpack [ _t . DataKwargs ] )",154,168
+2,1,33,2,10,delete@171-180@.\src\requests\api.py,.\src\requests\api.py,delete,"delete( url : _t . UriType , ** kwargs : Unpack [ _t . RequestKwargs ] )",171,180
+27,5,148,2,42,_basic_auth_str@34-75@.\src\requests\auth.py,.\src\requests\auth.py,_basic_auth_str,"_basic_auth_str( username : bytes | str , password : bytes | str )",34,75
+2,1,16,2,2,__call__@81-82@.\src\requests\auth.py,.\src\requests\auth.py,__call__,"__call__( self , r : PreparedRequest )",81,82
+3,1,29,3,3,__init__@96-98@.\src\requests\auth.py,.\src\requests\auth.py,__init__,"__init__( self , username : bytes | str , password : bytes | str )",96,98
+7,1,43,2,7,__eq__@100-106@.\src\requests\auth.py,.\src\requests\auth.py,__eq__,"__eq__( self , other : object )",100,106
+2,1,16,2,2,__ne__@108-109@.\src\requests\auth.py,.\src\requests\auth.py,__ne__,"__ne__( self , other : Any )",108,109
+3,1,30,2,3,__call__@111-113@.\src\requests\auth.py,.\src\requests\auth.py,__call__,"__call__( self , r : PreparedRequest )",111,113
+3,1,30,2,3,__call__@119-121@.\src\requests\auth.py,.\src\requests\auth.py,__call__,"__call__( self , r : PreparedRequest )",119,121
+4,1,38,3,5,__init__@141-145@.\src\requests\auth.py,.\src\requests\auth.py,__init__,"__init__( self , username : bytes | str , password : bytes | str )",141,145
+8,2,61,1,9,init_per_thread_state@147-155@.\src\requests\auth.py,.\src\requests\auth.py,init_per_thread_state,init_per_thread_state( self ),147,155
+4,2,42,1,4,build_digest_header.md5_utf8@176-179@.\src\requests\auth.py,.\src\requests\auth.py,build_digest_header.md5_utf8,build_digest_header.md5_utf8( x : str | bytes ),176,179
+4,2,42,1,4,build_digest_header.sha_utf8@184-187@.\src\requests\auth.py,.\src\requests\auth.py,build_digest_header.sha_utf8,build_digest_header.sha_utf8( x : str | bytes ),184,187
+4,2,42,1,4,build_digest_header.sha256_utf8@192-195@.\src\requests\auth.py,.\src\requests\auth.py,build_digest_header.sha256_utf8,build_digest_header.sha256_utf8( x : str | bytes ),192,195
+4,2,42,1,4,build_digest_header.sha512_utf8@200-203@.\src\requests\auth.py,.\src\requests\auth.py,build_digest_header.sha512_utf8,build_digest_header.sha512_utf8( x : str | bytes ),200,203
+2,1,21,2,2,build_digest_header.KD@210-211@.\src\requests\auth.py,.\src\requests\auth.py,build_digest_header.KD,"build_digest_header.KD( s : str , d : str )",210,211
+68,19,439,3,110,build_digest_header@157-266@.\src\requests\auth.py,.\src\requests\auth.py,build_digest_header,"build_digest_header( self , method : str , url : str )",157,266
+3,2,29,3,4,handle_redirect@268-271@.\src\requests\auth.py,.\src\requests\auth.py,handle_redirect,"handle_redirect( self , r : Response , ** kwargs : Any )",268,271
+29,7,264,3,47,handle_401@273-319@.\src\requests\auth.py,.\src\requests\auth.py,handle_401,"handle_401( self , r : Response , ** kwargs : Any )",273,319
+16,4,124,2,23,__call__@321-343@.\src\requests\auth.py,.\src\requests\auth.py,__call__,"__call__( self , r : PreparedRequest )",321,343
+7,1,43,2,7,__eq__@345-351@.\src\requests\auth.py,.\src\requests\auth.py,__eq__,"__eq__( self , other : object )",345,351
+2,1,16,2,2,__ne__@353-354@.\src\requests\auth.py,.\src\requests\auth.py,__ne__,"__ne__( self , other : Any )",353,354
+9,4,42,0,10,_resolve_char_detection@36-45@.\src\requests\compat.py,.\src\requests\compat.py,_resolve_char_detection,_resolve_char_detection( ),36,45
+5,1,48,2,5,__init__@45-49@.\src\requests\cookies.py,.\src\requests\cookies.py,__init__,"__init__( self , request : PreparedRequest )",45,49
+2,1,11,1,2,get_type@51-52@.\src\requests\cookies.py,.\src\requests\cookies.py,get_type,get_type( self ),51,52
+2,1,18,1,2,get_host@54-55@.\src\requests\cookies.py,.\src\requests\cookies.py,get_host,get_host( self ),54,55
+2,1,13,1,2,get_origin_req_host@57-58@.\src\requests\cookies.py,.\src\requests\cookies.py,get_origin_req_host,get_origin_req_host( self ),57,58
+15,2,81,1,19,get_full_url@60-78@.\src\requests\cookies.py,.\src\requests\cookies.py,get_full_url,get_full_url( self ),60,78
+2,1,9,1,2,is_unverifiable@80-81@.\src\requests\cookies.py,.\src\requests\cookies.py,is_unverifiable,is_unverifiable( self ),80,81
+2,2,25,2,2,has_header@83-84@.\src\requests\cookies.py,.\src\requests\cookies.py,has_header,"has_header( self , name : str )",83,84
+2,1,43,3,2,get_header@86-87@.\src\requests\cookies.py,.\src\requests\cookies.py,get_header,"get_header( self , name : str , default : str | None = None )",86,87
+4,1,21,3,5,add_header@89-93@.\src\requests\cookies.py,.\src\requests\cookies.py,add_header,"add_header( self , key : str , val : str )",89,93
+2,1,23,3,2,add_unredirected_header@95-96@.\src\requests\cookies.py,.\src\requests\cookies.py,add_unredirected_header,"add_unredirected_header( self , name : str , value : str )",95,96
+2,1,16,1,2,get_new_headers@98-99@.\src\requests\cookies.py,.\src\requests\cookies.py,get_new_headers,get_new_headers( self ),98,99
+2,1,13,1,2,unverifiable@102-103@.\src\requests\cookies.py,.\src\requests\cookies.py,unverifiable,unverifiable( self ),102,103
+2,1,13,1,2,origin_req_host@106-107@.\src\requests\cookies.py,.\src\requests\cookies.py,origin_req_host,origin_req_host( self ),106,107
+2,1,13,1,2,host@110-111@.\src\requests\cookies.py,.\src\requests\cookies.py,host,host( self ),110,111
+2,1,17,2,6,__init__@121-126@.\src\requests\cookies.py,.\src\requests\cookies.py,__init__,"__init__( self , headers : Any )",121,126
+2,1,11,1,2,info@128-129@.\src\requests\cookies.py,.\src\requests\cookies.py,info,info( self ),128,129
+2,1,19,2,2,getheaders@131-132@.\src\requests\cookies.py,.\src\requests\cookies.py,getheaders,"getheaders( self , name : str )",131,132
+8,3,58,3,16,extract_cookies_to_jar@135-150@.\src\requests\cookies.py,.\src\requests\cookies.py,extract_cookies_to_jar,"extract_cookies_to_jar( jar : CookieJar , request : PreparedRequest , response : Any )",135,150
+4,1,39,2,9,get_cookie_header@153-161@.\src\requests\cookies.py,.\src\requests\cookies.py,get_cookie_header,"get_cookie_header( jar : CookieJar , request : PreparedRequest )",153,161
+14,8,122,4,19,remove_cookie_by_name@164-182@.\src\requests\cookies.py,.\src\requests\cookies.py,remove_cookie_by_name,"remove_cookie_by_name( cookiejar : CookieJar , name : str , domain : str | None = None , path : str | None = None )",164,182
+11,2,57,5,17,get@211-227@.\src\requests\cookies.py,.\src\requests\cookies.py,get,"get( self , name : str , default : str | None = None , domain : str | None = None , path : str | None = None , )",211,227
+14,3,100,4,20,set@229-248@.\src\requests\cookies.py,.\src\requests\cookies.py,set,"set( self , name : str , value : str | Morsel [ dict [ str , str ] ] | None , ** kwargs : Any )",229,248
+3,2,23,1,8,iterkeys@250-257@.\src\requests\cookies.py,.\src\requests\cookies.py,iterkeys,iterkeys( self ),250,257
+2,1,20,1,7,keys@259-265@.\src\requests\cookies.py,.\src\requests\cookies.py,keys,keys( self ),259,265
+3,2,25,1,8,itervalues@267-274@.\src\requests\cookies.py,.\src\requests\cookies.py,itervalues,itervalues( self ),267,274
+2,1,22,1,7,values@276-282@.\src\requests\cookies.py,.\src\requests\cookies.py,values,values( self ),276,282
+3,2,34,1,8,iteritems@284-291@.\src\requests\cookies.py,.\src\requests\cookies.py,iteritems,iteritems( self ),284,291
+2,1,27,1,8,items@293-300@.\src\requests\cookies.py,.\src\requests\cookies.py,items,items( self ),293,300
+6,3,46,1,7,list_domains@302-308@.\src\requests\cookies.py,.\src\requests\cookies.py,list_domains,list_domains( self ),302,308
+6,3,46,1,7,list_paths@310-316@.\src\requests\cookies.py,.\src\requests\cookies.py,list_paths,list_paths( self ),310,316
+7,4,51,1,12,multiple_domains@318-329@.\src\requests\cookies.py,.\src\requests\cookies.py,multiple_domains,multiple_domains( self ),318,329
+10,6,89,3,16,get_dict@331-346@.\src\requests\cookies.py,.\src\requests\cookies.py,get_dict,"get_dict( self , domain : str | None = None , path : str | None = None )",331,346
+2,1,19,1,3,__iter__@348-350@.\src\requests\cookies.py,.\src\requests\cookies.py,__iter__,__iter__( self ),348,350
+5,2,27,2,5,__contains__@352-356@.\src\requests\cookies.py,.\src\requests\cookies.py,__contains__,"__contains__( self , name : object )",352,356
+2,1,21,2,8,__getitem__@358-365@.\src\requests\cookies.py,.\src\requests\cookies.py,__getitem__,"__getitem__( self , name : str )",358,365
+4,1,36,3,8,__setitem__@367-374@.\src\requests\cookies.py,.\src\requests\cookies.py,__setitem__,"__setitem__( self , name : str , value : str | Morsel [ dict [ str , str ] ] | None )",367,374
+2,1,18,2,5,__delitem__@376-380@.\src\requests\cookies.py,.\src\requests\cookies.py,__delitem__,"__delitem__( self , name : str )",376,380
+8,4,76,4,8,set_cookie@382-389@.\src\requests\cookies.py,.\src\requests\cookies.py,set_cookie,"set_cookie( self , cookie : Cookie , * args : Any , ** kwargs : Any )",382,389
+8,3,55,2,9,update@391-399@.\src\requests\cookies.py,.\src\requests\cookies.py,update,"update( self , other : CookieJar | SupportsKeysAndGetItem [ str , str ] )",391,399
+9,7,88,4,21,_find@401-421@.\src\requests\cookies.py,.\src\requests\cookies.py,_find,"_find( self , name : str , domain : str | None = None , path : str | None = None )",401,421
+16,9,113,4,30,_find_no_duplicates@423-452@.\src\requests\cookies.py,.\src\requests\cookies.py,_find_no_duplicates,"_find_no_duplicates( self , name : str , domain : str | None = None , path : str | None = None )",423,452
+4,1,30,1,6,__getstate__@454-459@.\src\requests\cookies.py,.\src\requests\cookies.py,__getstate__,__getstate__( self ),454,459
+4,2,42,2,5,__setstate__@461-465@.\src\requests\cookies.py,.\src\requests\cookies.py,__setstate__,"__setstate__( self , state : dict [ str , Any ] )",461,465
+5,1,31,1,6,copy@467-472@.\src\requests\cookies.py,.\src\requests\cookies.py,copy,copy( self ),467,472
+2,1,12,1,3,get_policy@474-476@.\src\requests\cookies.py,.\src\requests\cookies.py,get_policy,get_policy( self ),474,476
+10,4,67,1,13,_copy_cookie_jar@479-491@.\src\requests\cookies.py,.\src\requests\cookies.py,_copy_cookie_jar,_copy_cookie_jar( jar : CookieJar | None ),479,491
+27,2,174,3,35,create_cookie@494-528@.\src\requests\cookies.py,.\src\requests\cookies.py,create_cookie,"create_cookie( name : str , value : str , ** kwargs : Any )",494,528
+25,5,180,1,27,morsel_to_cookie@531-557@.\src\requests\cookies.py,.\src\requests\cookies.py,morsel_to_cookie,morsel_to_cookie( morsel : Morsel [ Any ] ),531,557
+13,7,90,3,23,cookiejar_from_dict@579-601@.\src\requests\cookies.py,.\src\requests\cookies.py,cookiejar_from_dict,"cookiejar_from_dict( cookie_dict : dict [ str , str ] | None , cookiejar : CookieJar | None = None , overwrite : bool = True , )",579,601
+14,6,102,2,22,merge_cookies@604-625@.\src\requests\cookies.py,.\src\requests\cookies.py,merge_cookies,"merge_cookies( cookiejar : CookieJar , cookies : dict [ str , str ] | CookieJar | None )",604,625
+7,4,86,3,8,__init__@28-35@.\src\requests\exceptions.py,.\src\requests\exceptions.py,__init__,"__init__( self , * args : Any , ** kwargs : Any )",28,35
+3,1,41,3,9,__init__@45-53@.\src\requests\exceptions.py,.\src\requests\exceptions.py,__init__,"__init__( self , * args : Any , ** kwargs : Any )",45,53
+2,1,22,1,9,__reduce__@55-63@.\src\requests\exceptions.py,.\src\requests\exceptions.py,__reduce__,__reduce__( self ),55,63
+18,6,112,0,30,_implementation@35-64@.\src\requests\help.py,.\src\requests\help.py,_implementation,_implementation( ),35,64
+52,6,268,0,57,info@67-123@.\src\requests\help.py,.\src\requests\help.py,info,info( ),67,123
+2,1,24,0,3,main@126-128@.\src\requests\help.py,.\src\requests\help.py,main,main( ),126,128
+2,2,27,0,2,default_hooks@25-26@.\src\requests\hooks.py,.\src\requests\hooks.py,default_hooks,default_hooks( ),25,26
+16,6,96,4,17,dispatch_hook@32-48@.\src\requests\hooks.py,.\src\requests\hooks.py,dispatch_hook,"dispatch_hook( key : str , hooks : _t . HooksInputType | None , hook_data : Response , ** kwargs : Any , )",32,48
+12,3,75,1,19,path_url@112-130@.\src\requests\models.py,.\src\requests\models.py,path_url,path_url( self ),112,130
+23,11,164,1,30,_encode_params@151-180@.\src\requests\models.py,.\src\requests\models.py,_encode_params,"_encode_params( data : _t . EncodableDataType , )",151,180
+51,21,340,2,69,_encode_files@183-251@.\src\requests\models.py,.\src\requests\models.py,_encode_files,"_encode_files( files : _t . FilesType , data : _t . RawDataType | None )",183,251
+11,6,90,3,14,register_hook@257-270@.\src\requests\models.py,.\src\requests\models.py,register_hook,"register_hook( self , event : str , hook : Iterable [ _t . HookType ] | _t . HookType )",257,270
+6,2,38,3,10,deregister_hook@272-281@.\src\requests\models.py,.\src\requests\models.py,deregister_hook,"deregister_hook( self , event : str , hook : _t . HookType )",272,281
+30,7,229,11,33,__init__@323-355@.\src\requests\models.py,.\src\requests\models.py,__init__,"__init__( self , method : str | None = None , url : _t . UriType | None = None , headers : _t . HeadersType = None , files : _t . FilesType = None , data : _t . DataType = None , params : _t . ParamsType = None , auth : _t . AuthType = None , cookies : RequestsCookieJar | CookieJar | dict [ str , str ] | None = None , hooks : _t . HooksInputType | None = None , json : _t . JsonType = None , )",323,355
+2,1,14,1,2,__repr__@357-358@.\src\requests\models.py,.\src\requests\models.py,__repr__,__repr__( self ),357,358
+15,1,80,1,16,prepare@360-375@.\src\requests\models.py,.\src\requests\models.py,prepare,prepare( self ),360,375
+8,1,44,1,16,__init__@407-422@.\src\requests\models.py,.\src\requests\models.py,__init__,__init__( self ),407,422
+21,1,167,11,28,prepare@424-451@.\src\requests\models.py,.\src\requests\models.py,prepare,"prepare( self , method : str | None = None , url : _t . UriType | None = None , headers : Mapping [ str , str | bytes ] | None = None , files : _t . FilesType = None , data : _t . DataType = None , params : _t . ParamsType = None , auth : _t . AuthType = None , cookies : RequestsCookieJar | CookieJar | dict [ str , str ] | None = None , hooks : _t . HooksInputType | None = None , json : _t . JsonType = None , )",424,451
+2,1,14,1,2,__repr__@453-454@.\src\requests\models.py,.\src\requests\models.py,__repr__,__repr__( self ),453,454
+10,2,79,1,10,copy@456-465@.\src\requests\models.py,.\src\requests\models.py,copy,copy( self ),456,465
+4,2,41,2,5,prepare_method@467-471@.\src\requests\models.py,.\src\requests\models.py,prepare_method,"prepare_method( self , method : str | None )",467,471
+7,2,39,1,8,_get_idna_encoded_host@474-481@.\src\requests\models.py,.\src\requests\models.py,_get_idna_encoded_host,_get_idna_encoded_host( host : str ),474,481
+52,18,291,3,81,prepare_url@483-563@.\src\requests\models.py,.\src\requests\models.py,prepare_url,"prepare_url( self , url : _t . UriType , params : _t . ParamsType , )",483,563
+7,3,60,2,10,prepare_headers@565-574@.\src\requests\models.py,.\src\requests\models.py,prepare_headers,"prepare_headers( self , headers : Mapping [ str , str | bytes ] | None )",565,574
+48,19,310,4,77,prepare_body@576-652@.\src\requests\models.py,.\src\requests\models.py,prepare_body,"prepare_body( self , data : _t . DataType , files : _t . FilesType , json : _t . JsonType = None )",576,652
+10,5,73,2,15,prepare_content_length@654-668@.\src\requests\models.py,.\src\requests\models.py,prepare_content_length,"prepare_content_length( self , body : _t . BodyType )",654,668
+16,6,110,3,28,prepare_auth@670-697@.\src\requests\models.py,.\src\requests\models.py,prepare_auth,"prepare_auth( self , auth : _t . AuthType , url : _t . UriType = '' , )",670,697
+11,3,80,2,22,prepare_cookies@699-720@.\src\requests\models.py,.\src\requests\models.py,prepare_cookies,"prepare_cookies( self , cookies : RequestsCookieJar | CookieJar | dict [ str , str ] | None )",699,720
+4,3,38,2,8,prepare_hooks@722-729@.\src\requests\models.py,.\src\requests\models.py,prepare_hooks,"prepare_hooks( self , hooks : _t . HooksInputType | None )",722,729
+14,1,84,1,46,__init__@765-810@.\src\requests\models.py,.\src\requests\models.py,__init__,__init__( self ),765,810
+2,1,9,1,2,__enter__@812-813@.\src\requests\models.py,.\src\requests\models.py,__enter__,__enter__( self ),812,813
+2,1,17,2,2,__exit__@815-816@.\src\requests\models.py,.\src\requests\models.py,__exit__,"__exit__( self , * args : Any )",815,816
+4,3,40,1,7,__getstate__@818-824@.\src\requests\models.py,.\src\requests\models.py,__getstate__,__getstate__( self ),818,824
+5,2,51,2,7,__setstate__@826-832@.\src\requests\models.py,.\src\requests\models.py,__setstate__,"__setstate__( self , state : dict [ str , Any ] )",826,832
+2,1,14,1,2,__repr__@834-835@.\src\requests\models.py,.\src\requests\models.py,__repr__,__repr__( self ),834,835
+2,1,12,1,9,__bool__@837-845@.\src\requests\models.py,.\src\requests\models.py,__bool__,__bool__( self ),837,845
+2,1,12,1,9,__nonzero__@847-855@.\src\requests\models.py,.\src\requests\models.py,__nonzero__,__nonzero__( self ),847,855
+2,1,18,1,3,__iter__@857-859@.\src\requests\models.py,.\src\requests\models.py,__iter__,__iter__( self ),857,859
+6,2,22,1,13,ok@862-874@.\src\requests\models.py,.\src\requests\models.py,ok,ok( self ),862,874
+2,2,20,1,5,is_redirect@877-881@.\src\requests\models.py,.\src\requests\models.py,is_redirect,is_redirect( self ),877,881
+5,2,29,1,6,is_permanent_redirect@884-889@.\src\requests\models.py,.\src\requests\models.py,is_permanent_redirect,is_permanent_redirect( self ),884,889
+2,1,14,1,3,next@892-894@.\src\requests\models.py,.\src\requests\models.py,next,next( self ),892,894
+5,2,32,1,8,apparent_encoding@897-904@.\src\requests\models.py,.\src\requests\models.py,apparent_encoding,apparent_encoding( self ),897,904
+19,8,106,0,22,iter_content.generate@935-956@.\src\requests\models.py,.\src\requests\models.py,iter_content.generate,iter_content.generate( ),935,956
+20,7,115,3,64,iter_content@914-977@.\src\requests\models.py,.\src\requests\models.py,iter_content,"iter_content( self , chunk_size : int | None = 1 , decode_unicode : bool = False )",914,977
+23,9,147,4,39,iter_lines@994-1032@.\src\requests\models.py,.\src\requests\models.py,iter_lines,"iter_lines( self , chunk_size : int = ITER_CHUNK_SIZE , decode_unicode : bool = False , delimiter : str | bytes | None = None , )",994,1032
+10,6,73,1,17,content@1035-1051@.\src\requests\models.py,.\src\requests\models.py,content,content( self ),1035,1051
+12,5,75,1,36,text@1054-1089@.\src\requests\models.py,.\src\requests\models.py,text,text( self ),1054,1089
+14,8,124,2,34,json@1091-1124@.\src\requests\models.py,.\src\requests\models.py,json,"json( self , ** kwargs : Any )",1091,1124
+10,5,87,1,16,links@1127-1142@.\src\requests\models.py,.\src\requests\models.py,links,links( self ),1127,1142
+19,6,111,1,28,raise_for_status@1144-1171@.\src\requests\models.py,.\src\requests\models.py,raise_for_status,raise_for_status( self ),1144,1171
+6,3,42,1,12,close@1173-1184@.\src\requests\models.py,.\src\requests\models.py,close,close( self ),1173,1184
+17,8,105,3,30,merge_setting@76-105@.\src\requests\sessions.py,.\src\requests\sessions.py,merge_setting,"merge_setting( request_setting : Any , session_setting : Any , dict_class : type = OrderedDict )",76,105
+10,5,70,3,17,merge_hooks@108-124@.\src\requests\sessions.py,.\src\requests\sessions.py,merge_hooks,"merge_hooks( request_hooks : _t . HooksType , session_hooks : _t . HooksType , dict_class : type = OrderedDict , )",108,124
+6,2,44,2,19,get_redirect_target@134-152@.\src\requests\sessions.py,.\src\requests\sessions.py,get_redirect_target,"get_redirect_target( self , resp : Response )",134,152
+22,10,134,3,31,should_strip_auth@154-184@.\src\requests\sessions.py,.\src\requests\sessions.py,should_strip_auth,"should_strip_auth( self , old_url : str , new_url : str )",154,184
+81,15,506,10,122,resolve_redirects@186-307@.\src\requests\sessions.py,.\src\requests\sessions.py,resolve_redirects,"resolve_redirects( self , resp : Response , req : PreparedRequest , stream : bool = False , timeout : _t . TimeoutType = None , verify : _t . VerifyType = True , cert : _t . CertType = None , proxies : dict [ str , str ] | None = None , yield_requests : bool = False , ** adapter_kwargs : Any , )",186,307
+14,5,89,3,24,rebuild_auth@309-332@.\src\requests\sessions.py,.\src\requests\sessions.py,rebuild_auth,"rebuild_auth( self , prepared_request : PreparedRequest , response : Response )",309,332
+18,6,120,3,35,rebuild_proxies@334-368@.\src\requests\sessions.py,.\src\requests\sessions.py,rebuild_proxies,"rebuild_proxies( self , prepared_request : PreparedRequest , proxies : dict [ str , str ] | None , )",334,368
+11,7,74,3,23,rebuild_method@370-392@.\src\requests\sessions.py,.\src\requests\sessions.py,rebuild_method,"rebuild_method( self , prepared_request : PreparedRequest , response : Response )",370,392
+15,1,99,1,62,__init__@442-503@.\src\requests\sessions.py,.\src\requests\sessions.py,__init__,__init__( self ),442,503
+2,1,9,1,2,__enter__@505-506@.\src\requests\sessions.py,.\src\requests\sessions.py,__enter__,__enter__( self ),505,506
+2,1,17,2,2,__exit__@508-509@.\src\requests\sessions.py,.\src\requests\sessions.py,__exit__,"__exit__( self , * args : Any )",508,509
+28,6,198,2,45,prepare_request@511-555@.\src\requests\sessions.py,.\src\requests\sessions.py,prepare_request,"prepare_request( self , request : Request )",511,555
+46,5,286,17,97,request@557-653@.\src\requests\sessions.py,.\src\requests\sessions.py,request,"request( self , method : str , url : _t . UriType , params : _t . ParamsType = None , data : _t . DataType = None , headers : _t . HeadersType = None , cookies : RequestsCookieJar | CookieJar | dict [ str , str ] | None = None , files : _t . FilesType = None , auth : _t . AuthType = None , timeout : _t . TimeoutType = None , allow_redirects : bool = True , proxies : dict [ str , str ] | None = None , hooks : _t . HooksInputType | None = None , stream : bool | None = None , verify : _t . VerifyType | None = None , cert : _t . CertType = None , json : _t . JsonType = None , )",557,653
+8,1,58,4,17,get@655-671@.\src\requests\sessions.py,.\src\requests\sessions.py,get,"get( self , url : _t . UriType , params : _t . ParamsType = None , ** kwargs : Unpack [ _t . GetKwargs ] , )",655,671
+3,1,45,3,10,options@673-682@.\src\requests\sessions.py,.\src\requests\sessions.py,options,"options( self , url : _t . UriType , ** kwargs : Unpack [ _t . RequestKwargs ] )",673,682
+3,1,45,3,10,head@684-693@.\src\requests\sessions.py,.\src\requests\sessions.py,head,"head( self , url : _t . UriType , ** kwargs : Unpack [ _t . RequestKwargs ] )",684,693
+8,1,62,5,18,post@695-712@.\src\requests\sessions.py,.\src\requests\sessions.py,post,"post( self , url : _t . UriType , data : _t . DataType = None , json : _t . JsonType = None , ** kwargs : Unpack [ _t . PostKwargs ] , )",695,712
+4,1,49,4,13,put@714-726@.\src\requests\sessions.py,.\src\requests\sessions.py,put,"put( self , url : _t . UriType , data : _t . DataType = None , ** kwargs : Unpack [ _t . DataKwargs ] )",714,726
+4,1,49,4,13,patch@728-740@.\src\requests\sessions.py,.\src\requests\sessions.py,patch,"patch( self , url : _t . UriType , data : _t . DataType = None , ** kwargs : Unpack [ _t . DataKwargs ] )",728,740
+2,1,37,3,9,delete@742-750@.\src\requests\sessions.py,.\src\requests\sessions.py,delete,"delete( self , url : _t . UriType , ** kwargs : Unpack [ _t . RequestKwargs ] )",742,750
+41,11,302,3,78,send@752-829@.\src\requests\sessions.py,.\src\requests\sessions.py,send,"send( self , request : PreparedRequest , ** kwargs : Any )",752,829
+25,9,194,6,38,merge_environment_settings@831-868@.\src\requests\sessions.py,.\src\requests\sessions.py,merge_environment_settings,"merge_environment_settings( self , url : str , proxies : dict [ str , str ] | None , stream : bool | None , verify : _t . VerifyType | None , cert : _t . CertType , )",831,868
+5,3,52,2,12,get_adapter@870-881@.\src\requests\sessions.py,.\src\requests\sessions.py,get_adapter,"get_adapter( self , url : str )",870,881
+3,2,24,1,4,close@883-886@.\src\requests\sessions.py,.\src\requests\sessions.py,close,close( self ),883,886
+5,4,65,3,10,mount@888-897@.\src\requests\sessions.py,.\src\requests\sessions.py,mount,"mount( self , prefix : str , adapter : BaseAdapter )",888,897
+3,2,34,1,3,__getstate__@899-901@.\src\requests\sessions.py,.\src\requests\sessions.py,__getstate__,__getstate__( self ),899,901
+3,2,35,2,3,__setstate__@903-905@.\src\requests\sessions.py,.\src\requests\sessions.py,__setstate__,"__setstate__( self , state : dict [ str , Any ] )",903,905
+2,1,11,0,13,session@908-920@.\src\requests\sessions.py,.\src\requests\sessions.py,session,session( ),908,920
+3,2,35,1,3,_init.doc@116-118@.\src\requests\status_codes.py,.\src\requests\status_codes.py,_init.doc,_init.doc( code : int ),116,118
+13,6,88,0,17,_init@109-125@.\src\requests\status_codes.py,.\src\requests\status_codes.py,_init,_init( ),109,125
+9,2,61,3,9,__init__@49-57@.\src\requests\structures.py,.\src\requests\structures.py,__init__,"__init__( self , data : Mapping [ str , _VT ] | Iterable [ tuple [ str , _VT ] ] | None = None , ** kwargs : _VT , )",49,57
+2,1,31,3,4,__setitem__@59-62@.\src\requests\structures.py,.\src\requests\structures.py,__setitem__,"__setitem__( self , key : str , value : _VT )",59,62
+2,1,25,2,2,__getitem__@64-65@.\src\requests\structures.py,.\src\requests\structures.py,__getitem__,"__getitem__( self , key : str )",64,65
+2,1,22,2,2,__delitem__@67-68@.\src\requests\structures.py,.\src\requests\structures.py,__delitem__,"__delitem__( self , key : str )",67,68
+2,2,26,1,2,__iter__@70-71@.\src\requests\structures.py,.\src\requests\structures.py,__iter__,__iter__( self ),70,71
+2,1,14,1,2,__len__@73-74@.\src\requests\structures.py,.\src\requests\structures.py,__len__,__len__( self ),73,74
+2,2,41,1,3,lower_items@76-78@.\src\requests\structures.py,.\src\requests\structures.py,lower_items,lower_items( self ),76,78
+6,2,52,2,7,__eq__@80-86@.\src\requests\structures.py,.\src\requests\structures.py,__eq__,"__eq__( self , other : object )",80,86
+2,1,21,1,2,copy@89-90@.\src\requests\structures.py,.\src\requests\structures.py,copy,copy( self ),89,90
+2,1,19,1,2,__repr__@92-93@.\src\requests\structures.py,.\src\requests\structures.py,__repr__,__repr__( self ),92,93
+3,1,25,2,3,__init__@101-103@.\src\requests\structures.py,.\src\requests\structures.py,__init__,"__init__( self , name : Any = None )",101,103
+2,1,14,1,2,__repr__@105-106@.\src\requests\structures.py,.\src\requests\structures.py,__repr__,__repr__( self ),105,106
+7,2,44,2,9,__getattr__@108-116@.\src\requests\structures.py,.\src\requests\structures.py,__getattr__,"__getattr__( self , key : str )",108,116
+2,1,24,2,4,__getitem__@118-121@.\src\requests\structures.py,.\src\requests\structures.py,__getitem__,"__getitem__( self , key : str )",118,121
+2,1,34,3,2,get@129-130@.\src\requests\structures.py,.\src\requests\structures.py,get,"get( self , key : str , default : _D | None = None )",129,130
+28,9,166,1,37,proxy_bypass_registry@99-135@.\src\requests\utils.py,.\src\requests\utils.py,proxy_bypass_registry,proxy_bypass_registry( host : str ),99,135
+5,2,27,1,10,proxy_bypass@137-146@.\src\requests\utils.py,.\src\requests\utils.py,proxy_bypass,proxy_bypass( host : str ),137,146
+6,2,52,1,9,dict_to_sequence@149-157@.\src\requests\utils.py,.\src\requests\utils.py,dict_to_sequence,"dict_to_sequence( d : _t . SupportsItems [ Any , Any ] | Iterable [ tuple [ Any , Any ] ] , )",149,157
+45,16,215,1,69,super_len@160-228@.\src\requests\utils.py,.\src\requests\utils.py,super_len,super_len( o : Any ),160,228
+34,16,205,2,50,get_netrc_auth@231-280@.\src\requests\utils.py,.\src\requests\utils.py,get_netrc_auth,"get_netrc_auth( url : _t . UriType , raise_errors : bool = False )",231,280
+4,5,60,1,5,guess_filename@283-287@.\src\requests\utils.py,.\src\requests\utils.py,guess_filename,guess_filename( obj : Any ),283,287
+21,8,167,1,36,extract_zipped_paths@290-325@.\src\requests\utils.py,.\src\requests\utils.py,extract_zipped_paths,extract_zipped_paths( path : str ),290,325
+9,2,70,1,10,atomic_open@329-338@.\src\requests\utils.py,.\src\requests\utils.py,atomic_open,atomic_open( filename : str ),329,338
+8,3,68,1,27,from_key_val_list@341-367@.\src\requests\utils.py,.\src\requests\utils.py,from_key_val_list,"from_key_val_list( value : Mapping [ Any , Any ] | Iterable [ tuple [ Any , Any ] ] | None , )",341,367
+10,4,90,1,29,to_key_val_list@376-404@.\src\requests\utils.py,.\src\requests\utils.py,to_key_val_list,"to_key_val_list( value : _t . SupportsItems [ _KT , _VT ] | Iterable [ tuple [ _KT , _VT ] ] | None , )",376,404
+7,3,66,1,29,parse_list_header@408-436@.\src\requests\utils.py,.\src\requests\utils.py,parse_list_header,parse_list_header( value : str ),408,436
+11,4,99,1,32,parse_dict_header@440-471@.\src\requests\utils.py,.\src\requests\utils.py,parse_dict_header,parse_dict_header( value : str ),440,471
+6,5,72,2,23,unquote_header_value@475-497@.\src\requests\utils.py,.\src\requests\utils.py,unquote_header_value,"unquote_header_value( value : str , is_filename : bool = False )",475,497
+3,2,34,1,9,dict_from_cookiejar@500-508@.\src\requests\utils.py,.\src\requests\utils.py,dict_from_cookiejar,dict_from_cookiejar( cj : CookieJar ),500,508
+2,1,26,2,9,add_dict_to_cookiejar@511-519@.\src\requests\utils.py,.\src\requests\utils.py,add_dict_to_cookiejar,"add_dict_to_cookiejar( cj : CookieJar , cookie_dict : dict [ str , str ] )",511,519
+17,1,88,1,23,get_encodings_from_content@522-544@.\src\requests\utils.py,.\src\requests\utils.py,get_encodings_from_content,get_encodings_from_content( content : str ),522,544
+12,4,131,1,20,_parse_content_type_header@547-566@.\src\requests\utils.py,.\src\requests\utils.py,_parse_content_type_header,_parse_content_type_header( header : str ),547,566
+11,5,66,1,23,get_encoding_from_headers@569-591@.\src\requests\utils.py,.\src\requests\utils.py,get_encoding_from_headers,get_encoding_from_headers( headers : CaseInsensitiveDict [ str ] ),569,591
+14,5,88,2,17,stream_decode_response_unicode@594-610@.\src\requests\utils.py,.\src\requests\utils.py,stream_decode_response_unicode,"stream_decode_response_unicode( iterator : Iterable [ bytes ] , r : Response )",594,610
+9,4,65,2,10,iter_slices@621-630@.\src\requests\utils.py,.\src\requests\utils.py,iter_slices,"iter_slices( string : bytes | str , slice_length : int | None )",621,630
+22,6,100,1,39,get_unicode_from_response@633-671@.\src\requests\utils.py,.\src\requests\utils.py,get_unicode_from_response,get_unicode_from_response( r : Response ),633,671
+16,6,133,1,22,unquote_unreserved@680-701@.\src\requests\utils.py,.\src\requests\utils.py,unquote_unreserved,unquote_unreserved( uri : str ),680,701
+7,2,42,1,20,requote_uri@704-723@.\src\requests\utils.py,.\src\requests\utils.py,requote_uri,requote_uri( uri : str ),704,723
+6,1,98,2,13,address_in_network@726-738@.\src\requests\utils.py,.\src\requests\utils.py,address_in_network,"address_in_network( ip : str , net : str )",726,738
+3,1,38,1,9,dotted_netmask@741-749@.\src\requests\utils.py,.\src\requests\utils.py,dotted_netmask,dotted_netmask( mask : int ),741,749
+6,2,25,1,9,is_ipv4_address@752-760@.\src\requests\utils.py,.\src\requests\utils.py,is_ipv4_address,is_ipv4_address( string_ip : str ),752,760
+15,6,79,1,22,is_valid_cidr@763-784@.\src\requests\utils.py,.\src\requests\utils.py,is_valid_cidr,is_valid_cidr( string_network : str ),763,784
+14,5,87,2,20,set_environ@788-807@.\src\requests\utils.py,.\src\requests\utils.py,set_environ,"set_environ( env_name : str , value : str | None )",788,807
+2,2,33,1,2,should_bypass_proxies.get_proxy@819-820@.\src\requests\utils.py,.\src\requests\utils.py,should_bypass_proxies.get_proxy,should_bypass_proxies.get_proxy( key : str ),819,820
+37,19,208,2,61,should_bypass_proxies@810-870@.\src\requests\utils.py,.\src\requests\utils.py,should_bypass_proxies,"should_bypass_proxies( url : str , no_proxy : str | None )",810,870
+5,2,42,2,10,get_environ_proxies@873-882@.\src\requests\utils.py,.\src\requests\utils.py,get_environ_proxies,"get_environ_proxies( url : str , no_proxy : str | None = None )",873,882
+17,5,106,2,24,select_proxy@885-908@.\src\requests\utils.py,.\src\requests\utils.py,select_proxy,"select_proxy( url : str , proxies : dict [ str , str ] | None )",885,908
+16,5,130,3,29,resolve_proxies@911-939@.\src\requests\utils.py,.\src\requests\utils.py,resolve_proxies,"resolve_proxies( request : Request | PreparedRequest , proxies : dict [ str , str ] | None , trust_env : bool = True , )",911,939
+2,1,17,1,7,default_user_agent@942-948@.\src\requests\utils.py,.\src\requests\utils.py,default_user_agent,default_user_agent( name : str = 'python-requests' ),942,948
+9,1,34,0,12,default_headers@951-962@.\src\requests\utils.py,.\src\requests\utils.py,default_headers,default_headers( ),951,962
+20,6,154,1,35,parse_header_links@965-999@.\src\requests\utils.py,.\src\requests\utils.py,parse_header_links,parse_header_links( value : str ),965,999
+22,11,138,1,30,guess_json_utf@1008-1037@.\src\requests\utils.py,.\src\requests\utils.py,guess_json_utf,guess_json_utf( data : bytes ),1008,1037
+14,5,107,2,28,prepend_scheme_if_needed@1040-1067@.\src\requests\utils.py,.\src\requests\utils.py,prepend_scheme_if_needed,"prepend_scheme_if_needed( url : str , new_scheme : str )",1040,1067
+7,2,56,1,15,get_auth_from_url@1070-1084@.\src\requests\utils.py,.\src\requests\utils.py,get_auth_from_url,get_auth_from_url( url : str ),1070,1084
+4,1,40,1,9,check_header_validity@1087-1095@.\src\requests\utils.py,.\src\requests\utils.py,check_header_validity,"check_header_validity( header : tuple [ str | bytes , str | bytes ] )",1087,1095
+20,5,108,3,22,_validate_header_part@1098-1119@.\src\requests\utils.py,.\src\requests\utils.py,_validate_header_part,"_validate_header_part( header : tuple [ str | bytes , str | bytes ] , header_part : str | bytes , header_validator_index : int , )",1098,1119
+6,2,68,1,15,urldefragauth@1122-1136@.\src\requests\utils.py,.\src\requests\utils.py,urldefragauth,urldefragauth( url : str ),1122,1136
+14,4,61,1,17,rewind_body@1139-1155@.\src\requests\utils.py,.\src\requests\utils.py,rewind_body,rewind_body( prepared_request : PreparedRequest ),1139,1155
+6,2,41,2,11,to_native_string@26-36@.\src\requests\_internal_utils.py,.\src\requests\_internal_utils.py,to_native_string,"to_native_string( string : str | bytes , encoding : str = 'ascii' )",26,36
+7,2,32,1,13,unicode_is_ascii@39-51@.\src\requests\_internal_utils.py,.\src\requests\_internal_utils.py,unicode_is_ascii,unicode_is_ascii( u_string : str ),39,51
+2,2,32,1,3,has_read@32-34@.\src\requests\_types.py,.\src\requests\_types.py,has_read,has_read( obj : Any ),32,34
+4,3,32,1,6,is_prepared@47-52@.\src\requests\_types.py,.\src\requests\_types.py,is_prepared,is_prepared( request : PreparedRequest ),47,52
+28,5,232,3,37,check_compatibility@60-96@.\src\requests\__init__.py,.\src\requests\__init__.py,check_compatibility,"check_compatibility( urllib3_version : str , chardet_version : str | None , charset_normalizer_version : str | None , )",60,96
+8,3,56,1,10,_check_cryptography@99-108@.\src\requests\__init__.py,.\src\requests\__init__.py,_check_cryptography,_check_cryptography( cryptography_version : str ),99,108
+12,4,65,2,16,consume_socket_content@7-22@.\tests\testserver\server.py,.\tests\testserver\server.py,consume_socket_content,"consume_socket_content( sock , timeout = 0 . 5 )",7,22
+17,2,84,6,20,__init__@30-49@.\tests\testserver\server.py,.\tests\testserver\server.py,__init__,"__init__( self , handler = None , host = 'localhost' , port = 0 , requests_to_handle = 1 , wait_to_close_event = None , )",30,49
+4,1,28,1,5,text_response_server.text_response_handler@53-57@.\tests\testserver\server.py,.\tests\testserver\server.py,text_response_server.text_response_handler,text_response_server.text_response_handler( sock ),53,57
+3,1,26,4,8,text_response_server@52-59@.\tests\testserver\server.py,.\tests\testserver\server.py,text_response_server,"text_response_server( cls , text , request_timeout = 0 . 5 , ** kwargs )",52,59
+4,1,20,2,4,basic_response_server@62-65@.\tests\testserver\server.py,.\tests\testserver\server.py,basic_response_server,"basic_response_server( cls , ** kwargs )",62,65
+12,3,78,1,14,run@67-80@.\tests\testserver\server.py,.\tests\testserver\server.py,run,run( self ),67,80
+5,1,33,1,5,_create_socket_and_bind@82-86@.\tests\testserver\server.py,.\tests\testserver\server.py,_create_socket_and_bind,_create_socket_and_bind( self ),82,86
+5,2,18,1,5,_close_server_sock_ignore_errors@88-92@.\tests\testserver\server.py,.\tests\testserver\server.py,_close_server_sock_ignore_errors,_close_server_sock_ignore_errors( self ),88,92
+8,3,48,1,10,_handle_requests@94-103@.\tests\testserver\server.py,.\tests\testserver\server.py,_handle_requests,_handle_requests( self ),94,103
+10,3,55,1,11,_accept_connection@105-115@.\tests\testserver\server.py,.\tests\testserver\server.py,_accept_connection,_accept_connection( self ),105,115
+5,2,36,1,5,__enter__@117-121@.\tests\testserver\server.py,.\tests\testserver\server.py,__enter__,__enter__( self ),117,121
+9,3,52,4,13,__exit__@123-135@.\tests\testserver\server.py,.\tests\testserver\server.py,__exit__,"__exit__( self , exc_type , exc_value , traceback )",123,135
+29,2,141,10,31,__init__@139-169@.\tests\testserver\server.py,.\tests\testserver\server.py,__init__,"__init__( self , * , handler = None , host = 'localhost' , port = 0 , requests_to_handle = 1 , wait_to_close_event = None , cert_chain = None , keyfile = None , mutual_tls = False , cacert = None , )",139,169
+6,1,47,1,6,_create_socket_and_bind@171-176@.\tests\testserver\server.py,.\tests\testserver\server.py,_create_socket_and_bind,_create_socket_and_bind( self ),171,176
+10,1,20,1,10,u@14-23@.\tests\compat.py,.\tests\compat.py,u,u( s ),14,23
+2,1,18,1,2,prepare_url.inner@19-20@.\tests\conftest.py,.\tests\conftest.py,prepare_url.inner,prepare_url.inner( * suffix ),19,20
+4,1,21,1,8,prepare_url@15-22@.\tests\conftest.py,.\tests\conftest.py,prepare_url,prepare_url( value ),15,22
+5,2,48,1,6,clean_proxy_environ@26-31@.\tests\conftest.py,.\tests\conftest.py,clean_proxy_environ,clean_proxy_environ( monkeypatch ),26,31
+2,1,10,1,2,httpbin@35-36@.\tests\conftest.py,.\tests\conftest.py,httpbin,httpbin( httpbin ),35,36
+2,1,10,1,2,httpbin_secure@40-41@.\tests\conftest.py,.\tests\conftest.py,httpbin_secure,httpbin_secure( httpbin_secure ),40,41
+16,1,132,1,23,nosan_server@45-67@.\tests\conftest.py,.\tests\conftest.py,nosan_server,nosan_server( tmp_path_factory ),45,67
+4,1,44,0,5,test_request_url_handles_leading_path_separators@4-8@.\tests\test_adapters.py,.\tests\test_adapters.py,test_request_url_handles_leading_path_separators,test_request_url_handles_leading_path_separators( ),4,8
+2,1,17,0,3,test_system_ssl@6-8@.\tests\test_help.py,.\tests\test_help.py,test_system_ssl,test_system_ssl( ),6,8
+2,1,12,2,2,__init__@12-13@.\tests\test_help.py,.\tests\test_help.py,__init__,"__init__( self , version )",12,13
+3,1,30,0,6,test_idna_without_version_attribute@16-21@.\tests\test_help.py,.\tests\test_help.py,test_idna_without_version_attribute,test_idna_without_version_attribute( ),16,21
+3,1,33,0,4,test_idna_with_version_attribute@24-27@.\tests\test_help.py,.\tests\test_help.py,test_idna_with_version_attribute,test_idna_with_version_attribute( ),24,27
+2,1,11,1,2,hook@6-7@.\tests\test_hooks.py,.\tests\test_hooks.py,hook,hook( value ),6,7
+2,1,24,2,2,test_hooks@17-18@.\tests\test_hooks.py,.\tests\test_hooks.py,test_hooks,"test_hooks( hooks_list , result )",17,18
+2,1,17,0,2,test_default_hooks@21-22@.\tests\test_hooks.py,.\tests\test_hooks.py,test_default_hooks,test_default_hooks( ),21,22
+8,1,43,1,10,echo_response_handler@12-21@.\tests\test_lowlevel.py,.\tests\test_lowlevel.py,echo_response_handler,echo_response_handler( sock ),12,21
+10,1,92,0,13,test_chunked_upload@24-36@.\tests\test_lowlevel.py,.\tests\test_lowlevel.py,test_chunked_upload,test_chunked_upload( ),24,36
+7,1,28,1,10,test_chunked_encoding_error.incomplete_chunked_response_handler@42-51@.\tests\test_lowlevel.py,.\tests\test_lowlevel.py,test_chunked_encoding_error.incomplete_chunked_response_handler,test_chunked_encoding_error.incomplete_chunked_response_handler( sock ),42,51
+9,1,60,0,22,test_chunked_encoding_error@39-60@.\tests\test_lowlevel.py,.\tests\test_lowlevel.py,test_chunked_encoding_error,test_chunked_encoding_error( ),39,60
+12,1,115,0,16,test_chunked_upload_uses_only_specified_host_header@63-78@.\tests\test_lowlevel.py,.\tests\test_lowlevel.py,test_chunked_upload_uses_only_specified_host_header,test_chunked_upload_uses_only_specified_host_header( ),63,78
+12,1,110,0,16,test_chunked_upload_doesnt_skip_host_header@81-96@.\tests\test_lowlevel.py,.\tests\test_lowlevel.py,test_chunked_upload_doesnt_skip_host_header,test_chunked_upload_doesnt_skip_host_header( ),81,96
+11,1,39,1,12,test_conflicting_content_lengths.multiple_content_length_response_handler@104-115@.\tests\test_lowlevel.py,.\tests\test_lowlevel.py,test_conflicting_content_lengths.multiple_content_length_response_handler,test_conflicting_content_lengths.multiple_content_length_response_handler( sock ),104,115
+9,1,60,0,26,test_conflicting_content_lengths@99-124@.\tests\test_lowlevel.py,.\tests\test_lowlevel.py,test_conflicting_content_lengths,test_conflicting_content_lengths( ),99,124
+14,1,101,1,23,test_digestauth_401_count_reset_on_redirect.digest_response_handler@152-174@.\tests\test_lowlevel.py,.\tests\test_lowlevel.py,test_digestauth_401_count_reset_on_redirect.digest_response_handler,test_digestauth_401_count_reset_on_redirect.digest_response_handler( sock ),152,174
+26,1,151,0,63,test_digestauth_401_count_reset_on_redirect@127-189@.\tests\test_lowlevel.py,.\tests\test_lowlevel.py,test_digestauth_401_count_reset_on_redirect,test_digestauth_401_count_reset_on_redirect( ),127,189
+10,1,72,1,17,test_digestauth_401_only_sent_once.digest_failed_response_handler@208-224@.\tests\test_lowlevel.py,.\tests\test_lowlevel.py,test_digestauth_401_only_sent_once.digest_failed_response_handler,test_digestauth_401_only_sent_once.digest_failed_response_handler( sock ),208,224
+19,1,111,0,44,test_digestauth_401_only_sent_once@192-235@.\tests\test_lowlevel.py,.\tests\test_lowlevel.py,test_digestauth_401_only_sent_once,test_digestauth_401_only_sent_once( ),192,235
+7,1,50,1,11,test_digestauth_only_on_4xx.digest_response_handler@251-261@.\tests\test_lowlevel.py,.\tests\test_lowlevel.py,test_digestauth_only_on_4xx.digest_response_handler,test_digestauth_only_on_4xx.digest_response_handler( sock ),251,261
+16,1,99,0,35,test_digestauth_only_on_4xx@238-272@.\tests\test_lowlevel.py,.\tests\test_lowlevel.py,test_digestauth_only_on_4xx,test_digestauth_only_on_4xx( ),238,272
+11,1,88,3,16,test_use_proxy_from_environment@290-305@.\tests\test_lowlevel.py,.\tests\test_lowlevel.py,test_use_proxy_from_environment,"test_use_proxy_from_environment( httpbin , var , scheme )",290,305
+13,1,68,1,13,test_redirect_rfc1808_to_non_ascii_location.redirect_resp_handler@313-325@.\tests\test_lowlevel.py,.\tests\test_lowlevel.py,test_redirect_rfc1808_to_non_ascii_location.redirect_resp_handler,test_redirect_rfc1808_to_non_ascii_location.redirect_resp_handler( sock ),313,325
+16,1,129,0,32,test_redirect_rfc1808_to_non_ascii_location@308-339@.\tests\test_lowlevel.py,.\tests\test_lowlevel.py,test_redirect_rfc1808_to_non_ascii_location,test_redirect_rfc1808_to_non_ascii_location( ),308,339
+15,2,121,0,20,test_fragment_not_sent_with_request@342-361@.\tests\test_lowlevel.py,.\tests\test_lowlevel.py,test_fragment_not_sent_with_request,test_fragment_not_sent_with_request( ),342,361
+17,1,64,1,17,test_fragment_update_on_redirect.response_handler@370-386@.\tests\test_lowlevel.py,.\tests\test_lowlevel.py,test_fragment_update_on_redirect.response_handler,test_fragment_update_on_redirect.response_handler( sock ),370,386
+13,1,111,0,41,test_fragment_update_on_redirect@364-404@.\tests\test_lowlevel.py,.\tests\test_lowlevel.py,test_fragment_update_on_redirect,test_fragment_update_on_redirect( ),364,404
+7,1,26,1,7,test_json_decode_compatibility_for_alt_utf_encodings.response_handler@409-415@.\tests\test_lowlevel.py,.\tests\test_lowlevel.py,test_json_decode_compatibility_for_alt_utf_encodings.response_handler,test_json_decode_compatibility_for_alt_utf_encodings.response_handler( sock ),409,415
+13,1,106,0,22,test_json_decode_compatibility_for_alt_utf_encodings@407-428@.\tests\test_lowlevel.py,.\tests\test_lowlevel.py,test_json_decode_compatibility_for_alt_utf_encodings,test_json_decode_compatibility_for_alt_utf_encodings( ),407,428
+2,1,9,0,2,test_can_access_urllib3_attribute@4-5@.\tests\test_packages.py,.\tests\test_packages.py,test_can_access_urllib3_attribute,test_can_access_urllib3_attribute( ),4,5
+2,1,9,0,2,test_can_access_idna_attribute@8-9@.\tests\test_packages.py,.\tests\test_packages.py,test_can_access_idna_attribute,test_can_access_idna_attribute( ),8,9
+2,1,9,0,2,test_can_access_chardet_attribute@12-13@.\tests\test_packages.py,.\tests\test_packages.py,test_can_access_chardet_attribute,test_can_access_chardet_attribute( ),12,13
+10,1,47,1,11,test_entry_points@87-97@.\tests\test_requests.py,.\tests\test_requests.py,test_entry_points,test_entry_points( self ),87,97
+3,1,23,3,3,test_invalid_url@111-113@.\tests\test_requests.py,.\tests\test_requests.py,test_invalid_url,"test_invalid_url( self , exception , url )",111,113
+7,1,47,1,8,test_basic_building@115-122@.\tests\test_requests.py,.\tests\test_requests.py,test_basic_building,test_basic_building( self ),115,122
+3,1,37,3,3,test_no_content_length@125-127@.\tests\test_requests.py,.\tests\test_requests.py,test_no_content_length,"test_no_content_length( self , httpbin , method )",125,127
+3,1,39,3,3,test_no_body_content_length@130-132@.\tests\test_requests.py,.\tests\test_requests.py,test_no_body_content_length,"test_no_body_content_length( self , httpbin , method )",130,132
+3,1,43,3,3,test_empty_content_length@135-137@.\tests\test_requests.py,.\tests\test_requests.py,test_empty_content_length,"test_empty_content_length( self , httpbin , method )",135,137
+5,1,50,2,5,test_override_content_length@139-143@.\tests\test_requests.py,.\tests\test_requests.py,test_override_content_length,"test_override_content_length( self , httpbin )",139,143
+3,1,25,1,4,test_path_is_not_double_encoded@145-148@.\tests\test_requests.py,.\tests\test_requests.py,test_path_is_not_double_encoded,test_path_is_not_double_encoded( self ),145,148
+3,1,37,3,3,test_params_are_added_before_fragment@163-165@.\tests\test_requests.py,.\tests\test_requests.py,test_params_are_added_before_fragment,"test_params_are_added_before_fragment( self , url , expected )",163,165
+10,1,72,1,10,test_params_original_order_is_preserved_by_default@167-176@.\tests\test_requests.py,.\tests\test_requests.py,test_params_original_order_is_preserved_by_default,test_params_original_order_is_preserved_by_default( self ),167,176
+5,1,30,1,5,test_params_bytes_are_encoded@178-182@.\tests\test_requests.py,.\tests\test_requests.py,test_params_bytes_are_encoded,test_params_bytes_are_encoded( self ),178,182
+5,1,36,1,5,test_binary_put@184-188@.\tests\test_requests.py,.\tests\test_requests.py,test_binary_put,test_binary_put( self ),184,188
+3,1,25,1,4,test_whitespaces_are_removed_from_url@190-193@.\tests\test_requests.py,.\tests\test_requests.py,test_whitespaces_are_removed_from_url,test_whitespaces_are_removed_from_url( self ),190,193
+8,1,75,3,8,test_mixed_case_scheme_acceptable@196-203@.\tests\test_requests.py,.\tests\test_requests.py,test_mixed_case_scheme_acceptable,"test_mixed_case_scheme_acceptable( self , httpbin , scheme )",196,203
+6,1,52,2,8,test_HTTP_200_OK_GET_ALTERNATIVE@205-212@.\tests\test_requests.py,.\tests\test_requests.py,test_HTTP_200_OK_GET_ALTERNATIVE,"test_HTTP_200_OK_GET_ALTERNATIVE( self , httpbin )",205,212
+5,1,46,2,5,test_HTTP_302_ALLOW_REDIRECT_GET@214-218@.\tests\test_requests.py,.\tests\test_requests.py,test_HTTP_302_ALLOW_REDIRECT_GET,"test_HTTP_302_ALLOW_REDIRECT_GET( self , httpbin )",214,218
+7,2,66,2,7,test_redirect_history_no_self_reference@220-226@.\tests\test_requests.py,.\tests\test_requests.py,test_redirect_history_no_self_reference,"test_redirect_history_no_self_reference( self , httpbin )",220,226
+10,1,72,2,10,test_HTTP_307_ALLOW_REDIRECT_POST@228-237@.\tests\test_requests.py,.\tests\test_requests.py,test_HTTP_307_ALLOW_REDIRECT_POST,"test_HTTP_307_ALLOW_REDIRECT_POST( self , httpbin )",228,237
+11,1,86,2,11,test_HTTP_307_ALLOW_REDIRECT_POST_WITH_SEEKABLE@239-249@.\tests\test_requests.py,.\tests\test_requests.py,test_HTTP_307_ALLOW_REDIRECT_POST_WITH_SEEKABLE,"test_HTTP_307_ALLOW_REDIRECT_POST_WITH_SEEKABLE( self , httpbin )",239,249
+10,2,68,2,10,test_HTTP_302_TOO_MANY_REDIRECTS@251-260@.\tests\test_requests.py,.\tests\test_requests.py,test_HTTP_302_TOO_MANY_REDIRECTS,"test_HTTP_302_TOO_MANY_REDIRECTS( self , httpbin )",251,260
+14,2,80,2,14,test_HTTP_302_TOO_MANY_REDIRECTS_WITH_PARAMS@262-275@.\tests\test_requests.py,.\tests\test_requests.py,test_HTTP_302_TOO_MANY_REDIRECTS_WITH_PARAMS,"test_HTTP_302_TOO_MANY_REDIRECTS_WITH_PARAMS( self , httpbin )",262,275
+6,1,54,2,6,test_http_301_changes_post_to_get@277-282@.\tests\test_requests.py,.\tests\test_requests.py,test_http_301_changes_post_to_get,"test_http_301_changes_post_to_get( self , httpbin )",277,282
+7,1,64,2,7,test_http_301_doesnt_change_head_to_get@284-290@.\tests\test_requests.py,.\tests\test_requests.py,test_http_301_doesnt_change_head_to_get,"test_http_301_doesnt_change_head_to_get( self , httpbin )",284,290
+6,1,54,2,6,test_http_302_changes_post_to_get@292-297@.\tests\test_requests.py,.\tests\test_requests.py,test_http_302_changes_post_to_get,"test_http_302_changes_post_to_get( self , httpbin )",292,297
+6,1,58,2,6,test_http_302_doesnt_change_head_to_get@299-304@.\tests\test_requests.py,.\tests\test_requests.py,test_http_302_doesnt_change_head_to_get,"test_http_302_doesnt_change_head_to_get( self , httpbin )",299,304
+6,1,54,2,6,test_http_303_changes_post_to_get@306-311@.\tests\test_requests.py,.\tests\test_requests.py,test_http_303_changes_post_to_get,"test_http_303_changes_post_to_get( self , httpbin )",306,311
+6,1,58,2,6,test_http_303_doesnt_change_head_to_get@313-318@.\tests\test_requests.py,.\tests\test_requests.py,test_http_303_doesnt_change_head_to_get,"test_http_303_doesnt_change_head_to_get( self , httpbin )",313,318
+12,2,106,2,16,test_header_and_body_removal_on_redirect@320-335@.\tests\test_requests.py,.\tests\test_requests.py,test_header_and_body_removal_on_redirect,"test_header_and_body_removal_on_redirect( self , httpbin )",320,335
+16,3,150,2,22,test_transfer_enc_removal_on_redirect@337-358@.\tests\test_requests.py,.\tests\test_requests.py,test_transfer_enc_removal_on_redirect,"test_transfer_enc_removal_on_redirect( self , httpbin )",337,358
+6,1,61,2,7,test_fragment_maintained_on_redirect@360-366@.\tests\test_requests.py,.\tests\test_requests.py,test_fragment_maintained_on_redirect,"test_fragment_maintained_on_redirect( self , httpbin )",360,366
+5,1,44,2,7,test_HTTP_200_OK_GET_WITH_PARAMS@368-374@.\tests\test_requests.py,.\tests\test_requests.py,test_HTTP_200_OK_GET_WITH_PARAMS,"test_HTTP_200_OK_GET_WITH_PARAMS( self , httpbin )",368,374
+6,1,45,2,7,test_HTTP_200_OK_GET_WITH_MIXED_PARAMS@376-382@.\tests\test_requests.py,.\tests\test_requests.py,test_HTTP_200_OK_GET_WITH_MIXED_PARAMS,"test_HTTP_200_OK_GET_WITH_MIXED_PARAMS( self , httpbin )",376,382
+5,1,35,2,5,test_set_cookie_on_301@384-388@.\tests\test_requests.py,.\tests\test_requests.py,test_set_cookie_on_301,"test_set_cookie_on_301( self , httpbin )",384,388
+5,1,45,2,5,test_cookie_sent_on_redirect@390-394@.\tests\test_requests.py,.\tests\test_requests.py,test_cookie_sent_on_redirect,"test_cookie_sent_on_redirect( self , httpbin )",390,394
+9,1,57,2,9,test_cookie_removed_on_expire@396-404@.\tests\test_requests.py,.\tests\test_requests.py,test_cookie_removed_on_expire,"test_cookie_removed_on_expire( self , httpbin )",396,404
+4,1,32,2,4,test_cookie_quote_wrapped@406-409@.\tests\test_requests.py,.\tests\test_requests.py,test_cookie_quote_wrapped,"test_cookie_quote_wrapped( self , httpbin )",406,409
+5,1,60,2,5,test_cookie_persists_via_api@411-415@.\tests\test_requests.py,.\tests\test_requests.py,test_cookie_persists_via_api,"test_cookie_persists_via_api( self , httpbin )",411,415
+6,1,64,2,7,test_request_cookie_overrides_session_cookie@417-423@.\tests\test_requests.py,.\tests\test_requests.py,test_request_cookie_overrides_session_cookie,"test_request_cookie_overrides_session_cookie( self , httpbin )",417,423
+4,1,36,2,5,test_request_cookies_not_persisted@425-429@.\tests\test_requests.py,.\tests\test_requests.py,test_request_cookies_not_persisted,"test_request_cookies_not_persisted( self , httpbin )",425,429
+8,1,67,2,10,test_generic_cookiejar_works@431-440@.\tests\test_requests.py,.\tests\test_requests.py,test_generic_cookiejar_works,"test_generic_cookiejar_works( self , httpbin )",431,440
+6,1,60,2,7,test_param_cookiejar_works@442-448@.\tests\test_requests.py,.\tests\test_requests.py,test_param_cookiejar_works,"test_param_cookiejar_works( self , httpbin )",442,448
+19,2,184,2,31,test_cookielib_cookiejar_on_redirect@450-480@.\tests\test_requests.py,.\tests\test_requests.py,test_cookielib_cookiejar_on_redirect,"test_cookielib_cookiejar_on_redirect( self , httpbin )",450,480
+5,3,50,2,5,test_requests_in_history_are_not_overridden@482-486@.\tests\test_requests.py,.\tests\test_requests.py,test_requests_in_history_are_not_overridden,"test_requests_in_history_are_not_overridden( self , httpbin )",482,486
+6,1,58,2,7,test_history_is_always_a_list@488-494@.\tests\test_requests.py,.\tests\test_requests.py,test_history_is_always_a_list,"test_history_is_always_a_list( self , httpbin )",488,494
+6,1,51,2,7,test_headers_on_session_with_None_are_not_sent@496-502@.\tests\test_requests.py,.\tests\test_requests.py,test_headers_on_session_with_None_are_not_sent,"test_headers_on_session_with_None_are_not_sent( self , httpbin )",496,502
+18,1,183,2,19,test_headers_preserve_order@504-522@.\tests\test_requests.py,.\tests\test_requests.py,test_headers_preserve_order,"test_headers_preserve_order( self , httpbin )",504,522
+4,1,40,3,5,test_user_agent_transfers@525-529@.\tests\test_requests.py,.\tests\test_requests.py,test_user_agent_transfers,"test_user_agent_transfers( self , httpbin , key )",525,529
+3,1,24,2,3,test_HTTP_200_OK_HEAD@531-533@.\tests\test_requests.py,.\tests\test_requests.py,test_HTTP_200_OK_HEAD,"test_HTTP_200_OK_HEAD( self , httpbin )",531,533
+3,1,24,2,3,test_HTTP_200_OK_PUT@535-537@.\tests\test_requests.py,.\tests\test_requests.py,test_HTTP_200_OK_PUT,"test_HTTP_200_OK_PUT( self , httpbin )",535,537
+11,1,82,2,14,test_BASICAUTH_TUPLE_HTTP_200_OK_GET@539-552@.\tests\test_requests.py,.\tests\test_requests.py,test_BASICAUTH_TUPLE_HTTP_200_OK_GET,"test_BASICAUTH_TUPLE_HTTP_200_OK_GET( self , httpbin )",539,552
+6,1,59,4,8,test_set_basicauth@563-570@.\tests\test_requests.py,.\tests\test_requests.py,test_set_basicauth,"test_set_basicauth( self , httpbin , username , password )",563,570
+5,1,45,1,9,test_basicauth_encodes_byte_strings@572-580@.\tests\test_requests.py,.\tests\test_requests.py,test_basicauth_encodes_byte_strings,test_basicauth_encodes_byte_strings( self ),572,580
+3,1,27,3,3,test_errors@593-595@.\tests\test_requests.py,.\tests\test_requests.py,test_errors,"test_errors( self , url , exception )",593,595
+5,1,27,1,6,test_proxy_error@597-602@.\tests\test_requests.py,.\tests\test_requests.py,test_proxy_error,test_proxy_error( self ),597,602
+9,1,105,3,12,test_proxy_error_on_bad_url@604-615@.\tests\test_requests.py,.\tests\test_requests.py,test_proxy_error_on_bad_url,"test_proxy_error_on_bad_url( self , httpbin , httpbin_secure )",604,615
+6,1,52,2,6,test_respect_proxy_env_on_send_self_prepared_request@617-622@.\tests\test_requests.py,.\tests\test_requests.py,test_respect_proxy_env_on_send_self_prepared_request,"test_respect_proxy_env_on_send_self_prepared_request( self , httpbin )",617,622
+7,1,56,2,7,test_respect_proxy_env_on_send_session_prepared_request@624-630@.\tests\test_requests.py,.\tests\test_requests.py,test_respect_proxy_env_on_send_session_prepared_request,"test_respect_proxy_env_on_send_session_prepared_request( self , httpbin )",624,630
+8,1,60,2,8,test_respect_proxy_env_on_send_with_redirects@632-639@.\tests\test_requests.py,.\tests\test_requests.py,test_respect_proxy_env_on_send_with_redirects,"test_respect_proxy_env_on_send_with_redirects( self , httpbin )",632,639
+5,1,38,2,5,test_respect_proxy_env_on_get@641-645@.\tests\test_requests.py,.\tests\test_requests.py,test_respect_proxy_env_on_get,"test_respect_proxy_env_on_get( self , httpbin )",641,645
+5,1,44,2,5,test_respect_proxy_env_on_request@647-651@.\tests\test_requests.py,.\tests\test_requests.py,test_respect_proxy_env_on_request,"test_respect_proxy_env_on_request( self , httpbin )",647,651
+7,1,70,2,8,test_proxy_authorization_preserved_on_request@653-660@.\tests\test_requests.py,.\tests\test_requests.py,test_proxy_authorization_preserved_on_request,"test_proxy_authorization_preserved_on_request( self , httpbin )",653,660
+12,1,63,3,13,test_proxy_authorization_not_appended_to_https_request@669-681@.\tests\test_requests.py,.\tests\test_requests.py,test_proxy_authorization_not_appended_to_https_request,"test_proxy_authorization_not_appended_to_https_request( self , url , has_proxy_auth )",669,681
+2,1,7,1,2,test_basicauth_with_netrc.get_netrc_auth_mock@692-693@.\tests\test_requests.py,.\tests\test_requests.py,test_basicauth_with_netrc.get_netrc_auth_mock,test_basicauth_with_netrc.get_netrc_auth_mock( url ),692,693
+20,2,130,2,34,test_basicauth_with_netrc@683-716@.\tests\test_requests.py,.\tests\test_requests.py,test_basicauth_with_netrc,"test_basicauth_with_netrc( self , httpbin )",683,716
+23,2,163,2,29,test_basicauth_with_netrc_leak@718-746@.\tests\test_requests.py,.\tests\test_requests.py,test_basicauth_with_netrc_leak,"test_basicauth_with_netrc_leak( self , httpbin )",718,746
+13,2,110,2,16,test_DIGEST_HTTP_200_OK_GET@748-763@.\tests\test_requests.py,.\tests\test_requests.py,test_DIGEST_HTTP_200_OK_GET,"test_DIGEST_HTTP_200_OK_GET( self , httpbin )",748,763
+8,2,71,2,9,test_DIGEST_AUTH_RETURNS_COOKIE@765-773@.\tests\test_requests.py,.\tests\test_requests.py,test_DIGEST_AUTH_RETURNS_COOKIE,"test_DIGEST_AUTH_RETURNS_COOKIE( self , httpbin )",765,773
+7,2,62,2,7,test_DIGEST_AUTH_SETS_SESSION_COOKIES@775-781@.\tests\test_requests.py,.\tests\test_requests.py,test_DIGEST_AUTH_SETS_SESSION_COOKIES,"test_DIGEST_AUTH_SETS_SESSION_COOKIES( self , httpbin )",775,781
+8,2,90,2,10,test_DIGEST_STREAM@783-792@.\tests\test_requests.py,.\tests\test_requests.py,test_DIGEST_STREAM,"test_DIGEST_STREAM( self , httpbin )",783,792
+12,2,94,2,15,test_DIGESTAUTH_WRONG_HTTP_401_GET@794-808@.\tests\test_requests.py,.\tests\test_requests.py,test_DIGESTAUTH_WRONG_HTTP_401_GET,"test_DIGESTAUTH_WRONG_HTTP_401_GET( self , httpbin )",794,808
+6,2,59,2,7,test_DIGESTAUTH_QUOTES_QOP_VALUE@810-816@.\tests\test_requests.py,.\tests\test_requests.py,test_DIGESTAUTH_QUOTES_QOP_VALUE,"test_DIGESTAUTH_QUOTES_QOP_VALUE( self , httpbin )",810,816
+12,1,113,2,16,test_POSTBIN_GET_POST_FILES@818-833@.\tests\test_requests.py,.\tests\test_requests.py,test_POSTBIN_GET_POST_FILES,"test_POSTBIN_GET_POST_FILES( self , httpbin )",818,833
+5,1,52,2,5,test_invalid_files_input@835-839@.\tests\test_requests.py,.\tests\test_requests.py,test_invalid_files_input,"test_invalid_files_input( self , httpbin )",835,839
+4,1,31,2,4,test_POSTBIN_SEEKED_OBJECT_WITH_NO_ITER.__init__@843-846@.\tests\test_requests.py,.\tests\test_requests.py,test_POSTBIN_SEEKED_OBJECT_WITH_NO_ITER.__init__,"test_POSTBIN_SEEKED_OBJECT_WITH_NO_ITER.__init__( self , data )",843,846
+2,1,9,1,2,test_POSTBIN_SEEKED_OBJECT_WITH_NO_ITER.__len__@848-849@.\tests\test_requests.py,.\tests\test_requests.py,test_POSTBIN_SEEKED_OBJECT_WITH_NO_ITER.__len__,test_POSTBIN_SEEKED_OBJECT_WITH_NO_ITER.__len__( self ),848,849
+8,2,55,2,8,test_POSTBIN_SEEKED_OBJECT_WITH_NO_ITER.read@851-858@.\tests\test_requests.py,.\tests\test_requests.py,test_POSTBIN_SEEKED_OBJECT_WITH_NO_ITER.read,"test_POSTBIN_SEEKED_OBJECT_WITH_NO_ITER.read( self , size = None )",851,858
+2,1,9,1,2,test_POSTBIN_SEEKED_OBJECT_WITH_NO_ITER.tell@860-861@.\tests\test_requests.py,.\tests\test_requests.py,test_POSTBIN_SEEKED_OBJECT_WITH_NO_ITER.tell,test_POSTBIN_SEEKED_OBJECT_WITH_NO_ITER.tell( self ),860,861
+7,4,45,3,7,test_POSTBIN_SEEKED_OBJECT_WITH_NO_ITER.seek@863-869@.\tests\test_requests.py,.\tests\test_requests.py,test_POSTBIN_SEEKED_OBJECT_WITH_NO_ITER.seek,"test_POSTBIN_SEEKED_OBJECT_WITH_NO_ITER.seek( self , offset , where = 0 )",863,869
+16,1,102,2,40,test_POSTBIN_SEEKED_OBJECT_WITH_NO_ITER@841-880@.\tests\test_requests.py,.\tests\test_requests.py,test_POSTBIN_SEEKED_OBJECT_WITH_NO_ITER,"test_POSTBIN_SEEKED_OBJECT_WITH_NO_ITER( self , httpbin )",841,880
+12,1,121,2,16,test_POSTBIN_GET_POST_FILES_WITH_DATA@882-897@.\tests\test_requests.py,.\tests\test_requests.py,test_POSTBIN_GET_POST_FILES_WITH_DATA,"test_POSTBIN_GET_POST_FILES_WITH_DATA( self , httpbin )",882,897
+2,1,23,3,2,test_post_with_custom_mapping.__init__@901-902@.\tests\test_requests.py,.\tests\test_requests.py,test_post_with_custom_mapping.__init__,"test_post_with_custom_mapping.__init__( self , * args , ** kwargs )",901,902
+2,1,14,2,2,test_post_with_custom_mapping.__delitem__@904-905@.\tests\test_requests.py,.\tests\test_requests.py,test_post_with_custom_mapping.__delitem__,"test_post_with_custom_mapping.__delitem__( self , key )",904,905
+2,1,14,2,2,test_post_with_custom_mapping.__getitem__@907-908@.\tests\test_requests.py,.\tests\test_requests.py,test_post_with_custom_mapping.__getitem__,"test_post_with_custom_mapping.__getitem__( self , key )",907,908
+2,1,17,3,2,test_post_with_custom_mapping.__setitem__@910-911@.\tests\test_requests.py,.\tests\test_requests.py,test_post_with_custom_mapping.__setitem__,"test_post_with_custom_mapping.__setitem__( self , key , value )",910,911
+2,1,12,1,2,test_post_with_custom_mapping.__iter__@913-914@.\tests\test_requests.py,.\tests\test_requests.py,test_post_with_custom_mapping.__iter__,test_post_with_custom_mapping.__iter__( self ),913,914
+2,1,12,1,2,test_post_with_custom_mapping.__len__@916-917@.\tests\test_requests.py,.\tests\test_requests.py,test_post_with_custom_mapping.__len__,test_post_with_custom_mapping.__len__( self ),916,917
+12,1,70,2,24,test_post_with_custom_mapping@899-922@.\tests\test_requests.py,.\tests\test_requests.py,test_post_with_custom_mapping,"test_post_with_custom_mapping( self , httpbin )",899,922
+5,1,47,2,5,test_conflicting_post_params@924-928@.\tests\test_requests.py,.\tests\test_requests.py,test_conflicting_post_params,"test_conflicting_post_params( self , httpbin )",924,928
+3,1,25,2,3,test_request_ok_set@930-932@.\tests\test_requests.py,.\tests\test_requests.py,test_request_ok_set,"test_request_ok_set( self , httpbin )",930,932
+6,1,55,2,7,test_status_raising@934-940@.\tests\test_requests.py,.\tests\test_requests.py,test_status_raising,"test_status_raising( self , httpbin )",934,940
+3,1,26,2,3,test_decompress_gzip@942-944@.\tests\test_requests.py,.\tests\test_requests.py,test_decompress_gzip,"test_decompress_gzip( self , httpbin )",942,944
+2,1,24,4,2,test_unicode_get@956-957@.\tests\test_requests.py,.\tests\test_requests.py,test_unicode_get,"test_unicode_get( self , httpbin , url , params )",956,957
+6,1,29,2,6,test_unicode_header_name@959-964@.\tests\test_requests.py,.\tests\test_requests.py,test_unicode_header_name,"test_unicode_header_name( self , httpbin )",959,964
+2,1,24,3,2,test_pyopenssl_redirect@966-967@.\tests\test_requests.py,.\tests\test_requests.py,test_pyopenssl_redirect,"test_pyopenssl_redirect( self , httpbin_secure , httpbin_ca_bundle )",966,967
+8,1,45,2,8,test_invalid_ca_certificate_path@969-976@.\tests\test_requests.py,.\tests\test_requests.py,test_invalid_ca_certificate_path,"test_invalid_ca_certificate_path( self , httpbin_secure )",969,976
+13,1,84,2,14,test_invalid_ssl_certificate_files@978-991@.\tests\test_requests.py,.\tests\test_requests.py,test_invalid_ssl_certificate_files,"test_invalid_ssl_certificate_files( self , httpbin_secure )",978,991
+7,1,65,4,7,test_env_cert_bundles@1018-1024@.\tests\test_requests.py,.\tests\test_requests.py,test_env_cert_bundles,"test_env_cert_bundles( self , httpbin , env , expected )",1018,1024
+3,1,27,2,3,test_http_with_certificate@1026-1028@.\tests\test_requests.py,.\tests\test_requests.py,test_http_with_certificate,"test_http_with_certificate( self , httpbin )",1026,1028
+20,6,101,2,24,test_https_warnings@1034-1057@.\tests\test_requests.py,.\tests\test_requests.py,test_https_warnings,"test_https_warnings( self , nosan_server )",1034,1057
+3,1,27,2,8,test_certificate_failure@1059-1066@.\tests\test_requests.py,.\tests\test_requests.py,test_certificate_failure,"test_certificate_failure( self , httpbin_secure )",1059,1066
+4,1,45,2,4,test_urlencoded_get_query_multivalued_param@1068-1071@.\tests\test_requests.py,.\tests\test_requests.py,test_urlencoded_get_query_multivalued_param,"test_urlencoded_get_query_multivalued_param( self , httpbin )",1068,1071
+6,1,50,2,6,test_form_encoded_post_query_multivalued_element@1073-1078@.\tests\test_requests.py,.\tests\test_requests.py,test_form_encoded_post_query_multivalued_element,"test_form_encoded_post_query_multivalued_element( self , httpbin )",1073,1078
+9,1,72,2,9,test_different_encodings_dont_break_post@1080-1088@.\tests\test_requests.py,.\tests\test_requests.py,test_different_encodings_dont_break_post,"test_different_encodings_dont_break_post( self , httpbin )",1080,1088
+10,1,71,2,10,test_post_named_tempfile@1090-1099@.\tests\test_requests.py,.\tests\test_requests.py,test_post_named_tempfile,"test_post_named_tempfile( self , httpbin )",1090,1099
+2,1,16,1,2,test_post_getattr_proxy_read_only.__init__@1104-1105@.\tests\test_requests.py,.\tests\test_requests.py,test_post_getattr_proxy_read_only.__init__,test_post_getattr_proxy_read_only.__init__( self ),1104,1105
+4,2,26,2,4,test_post_getattr_proxy_read_only.__getattr__@1107-1110@.\tests\test_requests.py,.\tests\test_requests.py,test_post_getattr_proxy_read_only.__getattr__,"test_post_getattr_proxy_read_only.__getattr__( self , name )",1107,1110
+7,1,48,2,14,test_post_getattr_proxy_read_only@1101-1114@.\tests\test_requests.py,.\tests\test_requests.py,test_post_getattr_proxy_read_only,"test_post_getattr_proxy_read_only( self , httpbin )",1101,1114
+8,1,53,3,8,test_unicode_multipart_post@1125-1132@.\tests\test_requests.py,.\tests\test_requests.py,test_unicode_multipart_post,"test_unicode_multipart_post( self , httpbin , data )",1125,1132
+12,1,93,2,13,test_unicode_multipart_post_fieldnames@1134-1146@.\tests\test_requests.py,.\tests\test_requests.py,test_unicode_multipart_post_fieldnames,"test_unicode_multipart_post_fieldnames( self , httpbin )",1134,1146
+9,1,52,2,9,test_unicode_method_name@1148-1156@.\tests\test_requests.py,.\tests\test_requests.py,test_unicode_method_name,"test_unicode_method_name( self , httpbin )",1148,1156
+10,1,85,2,11,test_unicode_method_name_with_request_object@1158-1168@.\tests\test_requests.py,.\tests\test_requests.py,test_unicode_method_name_with_request_object,"test_unicode_method_name_with_request_object( self , httpbin )",1158,1168
+6,1,47,1,7,test_non_prepared_request_error@1170-1176@.\tests\test_requests.py,.\tests\test_requests.py,test_non_prepared_request_error,test_non_prepared_request_error( self ),1170,1176
+11,1,99,2,11,test_custom_content_type@1178-1188@.\tests\test_requests.py,.\tests\test_requests.py,test_custom_content_type,"test_custom_content_type( self , httpbin )",1178,1188
+3,1,18,2,3,test_hook_receives_request_arguments.hook@1191-1193@.\tests\test_requests.py,.\tests\test_requests.py,test_hook_receives_request_arguments.hook,"test_hook_receives_request_arguments.hook( resp , ** kwargs )",1191,1193
+6,1,50,2,9,test_hook_receives_request_arguments@1190-1198@.\tests\test_requests.py,.\tests\test_requests.py,test_hook_receives_request_arguments,"test_hook_receives_request_arguments( self , httpbin )",1190,1198
+2,1,10,2,2,test_session_hooks_are_used_with_no_request_hooks.hook@1201-1202@.\tests\test_requests.py,.\tests\test_requests.py,test_session_hooks_are_used_with_no_request_hooks.hook,"test_session_hooks_are_used_with_no_request_hooks.hook( * args , ** kwargs )",1201,1202
+8,1,68,2,10,test_session_hooks_are_used_with_no_request_hooks@1200-1209@.\tests\test_requests.py,.\tests\test_requests.py,test_session_hooks_are_used_with_no_request_hooks,"test_session_hooks_are_used_with_no_request_hooks( self , httpbin )",1200,1209
+2,1,10,2,2,test_session_hooks_are_overridden_by_request_hooks.hook1@1212-1213@.\tests\test_requests.py,.\tests\test_requests.py,test_session_hooks_are_overridden_by_request_hooks.hook1,"test_session_hooks_are_overridden_by_request_hooks.hook1( * args , ** kwargs )",1212,1213
+2,1,10,2,2,test_session_hooks_are_overridden_by_request_hooks.hook2@1215-1216@.\tests\test_requests.py,.\tests\test_requests.py,test_session_hooks_are_overridden_by_request_hooks.hook2,"test_session_hooks_are_overridden_by_request_hooks.hook2( * args , ** kwargs )",1215,1216
+9,1,75,2,13,test_session_hooks_are_overridden_by_request_hooks@1211-1223@.\tests\test_requests.py,.\tests\test_requests.py,test_session_hooks_are_overridden_by_request_hooks,"test_session_hooks_are_overridden_by_request_hooks( self , httpbin )",1211,1223
+3,1,15,2,3,test_prepared_request_hook.hook@1226-1228@.\tests\test_requests.py,.\tests\test_requests.py,test_prepared_request_hook.hook,"test_prepared_request_hook.hook( resp , ** kwargs )",1226,1228
+8,1,65,2,13,test_prepared_request_hook@1225-1237@.\tests\test_requests.py,.\tests\test_requests.py,test_prepared_request_hook,"test_prepared_request_hook( self , httpbin )",1225,1237
+3,1,17,2,3,test_prepared_from_session.__call__@1241-1243@.\tests\test_requests.py,.\tests\test_requests.py,test_prepared_from_session.__call__,"test_prepared_from_session.__call__( self , r )",1241,1243
+10,1,81,2,16,test_prepared_from_session@1239-1254@.\tests\test_requests.py,.\tests\test_requests.py,test_prepared_from_session,"test_prepared_from_session( self , httpbin )",1239,1254
+5,1,37,1,5,test_prepare_request_with_bytestring_url@1256-1260@.\tests\test_requests.py,.\tests\test_requests.py,test_prepare_request_with_bytestring_url,test_prepare_request_with_bytestring_url( self ),1256,1260
+9,1,52,2,9,test_request_with_bytestring_host@1262-1270@.\tests\test_requests.py,.\tests\test_requests.py,test_request_with_bytestring_host,"test_request_with_bytestring_host( self , httpbin )",1262,1270
+25,1,95,1,25,test_links@1272-1296@.\tests\test_requests.py,.\tests\test_requests.py,test_links,test_links( self ),1272,1296
+14,1,97,1,17,test_cookie_parameters@1298-1314@.\tests\test_requests.py,.\tests\test_requests.py,test_cookie_parameters,test_cookie_parameters( self ),1298,1314
+15,1,96,1,19,test_cookie_as_dict_keeps_len@1316-1334@.\tests\test_requests.py,.\tests\test_requests.py,test_cookie_as_dict_keeps_len,test_cookie_as_dict_keeps_len( self ),1316,1334
+14,1,89,1,18,test_cookie_as_dict_keeps_items@1336-1353@.\tests\test_requests.py,.\tests\test_requests.py,test_cookie_as_dict_keeps_items,test_cookie_as_dict_keeps_items( self ),1336,1353
+11,1,66,1,15,test_cookie_as_dict_keys@1355-1369@.\tests\test_requests.py,.\tests\test_requests.py,test_cookie_as_dict_keys,test_cookie_as_dict_keys( self ),1355,1369
+11,1,66,1,15,test_cookie_as_dict_values@1371-1385@.\tests\test_requests.py,.\tests\test_requests.py,test_cookie_as_dict_values,test_cookie_as_dict_values( self ),1371,1385
+11,1,66,1,15,test_cookie_as_dict_items@1387-1401@.\tests\test_requests.py,.\tests\test_requests.py,test_cookie_as_dict_items,test_cookie_as_dict_items( self ),1387,1401
+15,1,102,1,20,test_cookie_duplicate_names_different_domains@1403-1422@.\tests\test_requests.py,.\tests\test_requests.py,test_cookie_duplicate_names_different_domains,test_cookie_duplicate_names_different_domains( self ),1403,1422
+9,1,61,1,10,test_cookie_duplicate_names_raises_cookie_conflict_error@1424-1433@.\tests\test_requests.py,.\tests\test_requests.py,test_cookie_duplicate_names_raises_cookie_conflict_error,test_cookie_duplicate_names_raises_cookie_conflict_error( self ),1424,1433
+6,1,46,1,7,test_cookie_policy_copy@1435-1441@.\tests\test_requests.py,.\tests\test_requests.py,test_cookie_policy_copy,test_cookie_policy_copy( self ),1435,1441
+7,1,58,2,7,test_time_elapsed_blank@1443-1449@.\tests\test_requests.py,.\tests\test_requests.py,test_time_elapsed_blank,"test_time_elapsed_blank( self , httpbin )",1443,1449
+3,1,18,1,3,test_empty_response_has_content_none@1451-1453@.\tests\test_requests.py,.\tests\test_requests.py,test_empty_response_has_content_none,test_empty_response_has_content_none( self ),1451,1453
+2,1,14,2,2,test_response_is_iterable.read_mock@1460-1461@.\tests\test_requests.py,.\tests\test_requests.py,test_response_is_iterable.read_mock,"test_response_is_iterable.read_mock( amt , decode_content = None )",1460,1461
+9,1,53,1,12,test_response_is_iterable@1455-1466@.\tests\test_requests.py,.\tests\test_requests.py,test_response_is_iterable,test_response_is_iterable( self ),1455,1466
+12,3,100,1,18,test_response_decode_unicode@1468-1485@.\tests\test_requests.py,.\tests\test_requests.py,test_response_decode_unicode,test_response_decode_unicode( self ),1468,1485
+7,1,41,1,8,test_response_reason_unicode@1487-1494@.\tests\test_requests.py,.\tests\test_requests.py,test_response_reason_unicode,test_response_reason_unicode( self ),1487,1494
+10,1,70,1,11,test_response_reason_unicode_fallback@1496-1506@.\tests\test_requests.py,.\tests\test_requests.py,test_response_reason_unicode_fallback,test_response_reason_unicode_fallback( self ),1496,1506
+13,2,116,1,18,test_response_chunk_size_type@1508-1525@.\tests\test_requests.py,.\tests\test_requests.py,test_response_chunk_size_type,test_response_chunk_size_type( self ),1508,1525
+6,1,59,5,9,test_iter_content_wraps_exceptions@1536-1544@.\tests\test_requests.py,.\tests\test_requests.py,test_iter_content_wraps_exceptions,"test_iter_content_wraps_exceptions( self , httpbin , exception , args , expected )",1536,1544
+6,1,69,2,11,test_request_and_response_are_pickleable@1546-1556@.\tests\test_requests.py,.\tests\test_requests.py,test_request_and_response_are_pickleable,"test_request_and_response_are_pickleable( self , httpbin )",1546,1556
+9,1,82,2,13,test_prepared_request_is_pickleable@1558-1570@.\tests\test_requests.py,.\tests\test_requests.py,test_prepared_request_is_pickleable,"test_prepared_request_is_pickleable( self , httpbin )",1558,1570
+11,1,103,2,15,test_prepared_request_with_file_is_pickleable@1572-1586@.\tests\test_requests.py,.\tests\test_requests.py,test_prepared_request_with_file_is_pickleable,"test_prepared_request_with_file_is_pickleable( self , httpbin )",1572,1586
+11,1,99,2,15,test_prepared_request_with_hook_is_pickleable@1588-1602@.\tests\test_requests.py,.\tests\test_requests.py,test_prepared_request_with_hook_is_pickleable,"test_prepared_request_with_hook_is_pickleable( self , httpbin )",1588,1602
+4,1,37,2,4,test_cannot_send_unprepared_requests@1604-1607@.\tests\test_requests.py,.\tests\test_requests.py,test_cannot_send_unprepared_requests,"test_cannot_send_unprepared_requests( self , httpbin )",1604,1607
+9,1,71,1,9,test_http_error@1609-1617@.\tests\test_requests.py,.\tests\test_requests.py,test_http_error,test_http_error( self ),1609,1617
+7,1,65,2,9,test_session_pickling@1619-1627@.\tests\test_requests.py,.\tests\test_requests.py,test_session_pickling,"test_session_pickling( self , httpbin )",1619,1627
+9,1,78,2,10,test_fixes_1329@1629-1638@.\tests\test_requests.py,.\tests\test_requests.py,test_fixes_1329,"test_fixes_1329( self , httpbin )",1629,1638
+6,1,66,2,6,test_uppercase_scheme_redirect@1640-1645@.\tests\test_requests.py,.\tests\test_requests.py,test_uppercase_scheme_redirect,"test_uppercase_scheme_redirect( self , httpbin )",1640,1645
+37,1,194,1,37,test_transport_adapter_ordering@1647-1683@.\tests\test_requests.py,.\tests\test_requests.py,test_transport_adapter_ordering,test_transport_adapter_ordering( self ),1647,1683
+20,1,94,1,23,test_session_get_adapter_prefix_matching@1685-1707@.\tests\test_requests.py,.\tests\test_requests.py,test_session_get_adapter_prefix_matching,test_session_get_adapter_prefix_matching( self ),1685,1707
+7,1,42,1,9,test_session_get_adapter_prefix_matching_mixed_case@1709-1717@.\tests\test_requests.py,.\tests\test_requests.py,test_session_get_adapter_prefix_matching_mixed_case,test_session_get_adapter_prefix_matching_mixed_case( self ),1709,1717
+9,1,42,1,11,test_session_get_adapter_prefix_matching_is_case_insensitive@1719-1729@.\tests\test_requests.py,.\tests\test_requests.py,test_session_get_adapter_prefix_matching_is_case_insensitive,test_session_get_adapter_prefix_matching_is_case_insensitive( self ),1719,1729
+9,1,53,1,12,test_session_get_adapter_prefix_with_trailing_slash@1731-1742@.\tests\test_requests.py,.\tests\test_requests.py,test_session_get_adapter_prefix_with_trailing_slash,test_session_get_adapter_prefix_with_trailing_slash( self ),1731,1742
+9,1,52,1,12,test_session_get_adapter_prefix_without_trailing_slash@1744-1755@.\tests\test_requests.py,.\tests\test_requests.py,test_session_get_adapter_prefix_without_trailing_slash,test_session_get_adapter_prefix_without_trailing_slash( self ),1744,1755
+5,1,50,2,6,test_header_remove_is_case_insensitive@1757-1762@.\tests\test_requests.py,.\tests\test_requests.py,test_header_remove_is_case_insensitive,"test_header_remove_is_case_insensitive( self , httpbin )",1757,1762
+5,1,60,2,5,test_params_are_merged_case_sensitive@1764-1768@.\tests\test_requests.py,.\tests\test_requests.py,test_params_are_merged_case_sensitive,"test_params_are_merged_case_sensitive( self , httpbin )",1764,1768
+8,1,38,1,8,test_long_authinfo_in_url@1770-1777@.\tests\test_requests.py,.\tests\test_requests.py,test_long_authinfo_in_url,test_long_authinfo_in_url( self ),1770,1777
+6,1,63,2,9,test_header_keys_are_native@1779-1787@.\tests\test_requests.py,.\tests\test_requests.py,test_header_keys_are_native,"test_header_keys_are_native( self , httpbin )",1779,1787
+10,2,67,2,11,test_header_validation@1789-1799@.\tests\test_requests.py,.\tests\test_requests.py,test_header_validation,"test_header_validation( self , httpbin )",1789,1799
+4,1,44,4,7,test_header_value_not_str@1809-1815@.\tests\test_requests.py,.\tests\test_requests.py,test_header_value_not_str,"test_header_value_not_str( self , httpbin , invalid_header , key )",1809,1815
+3,1,31,3,6,test_header_no_return_chars@1835-1840@.\tests\test_requests.py,.\tests\test_requests.py,test_header_no_return_chars,"test_header_no_return_chars( self , httpbin , invalid_header )",1835,1840
+3,1,31,3,6,test_header_no_leading_space@1854-1859@.\tests\test_requests.py,.\tests\test_requests.py,test_header_no_leading_space,"test_header_no_leading_space( self , httpbin , invalid_header )",1854,1859
+15,1,129,2,24,test_header_with_subclass_types@1861-1884@.\tests\test_requests.py,.\tests\test_requests.py,test_header_with_subclass_types,"test_header_with_subclass_types( self , httpbin )",1861,1884
+6,1,60,3,6,test_can_send_objects_with_files@1887-1892@.\tests\test_requests.py,.\tests\test_requests.py,test_can_send_objects_with_files,"test_can_send_objects_with_files( self , httpbin , files )",1887,1892
+6,1,56,2,7,test_can_send_file_object_with_non_string_filename@1894-1900@.\tests\test_requests.py,.\tests\test_requests.py,test_can_send_file_object_with_non_string_filename,"test_can_send_file_object_with_non_string_filename( self , httpbin )",1894,1900
+6,1,46,2,7,test_autoset_header_values_are_native@1902-1908@.\tests\test_requests.py,.\tests\test_requests.py,test_autoset_header_values_are_native,"test_autoset_header_values_are_native( self , httpbin )",1902,1908
+10,2,43,1,10,test_nonhttp_schemes_dont_check_URLs@1910-1919@.\tests\test_requests.py,.\tests\test_requests.py,test_nonhttp_schemes_dont_check_URLs,test_nonhttp_schemes_dont_check_URLs( self ),1910,1919
+11,1,69,4,11,test_auth_is_stripped_on_http_downgrade@1921-1931@.\tests\test_requests.py,.\tests\test_requests.py,test_auth_is_stripped_on_http_downgrade,"test_auth_is_stripped_on_http_downgrade( self , httpbin , httpbin_secure , httpbin_ca_bundle )",1921,1931
+5,1,55,2,6,test_auth_is_retained_for_redirect_on_host@1933-1938@.\tests\test_requests.py,.\tests\test_requests.py,test_auth_is_retained_for_redirect_on_host,"test_auth_is_retained_for_redirect_on_host( self , httpbin )",1933,1938
+5,1,21,1,5,test_should_strip_auth_host_change@1940-1944@.\tests\test_requests.py,.\tests\test_requests.py,test_should_strip_auth_host_change,test_should_strip_auth_host_change( self ),1940,1944
+3,1,21,1,3,test_should_strip_auth_http_downgrade@1946-1948@.\tests\test_requests.py,.\tests\test_requests.py,test_should_strip_auth_http_downgrade,test_should_strip_auth_http_downgrade( self ),1946,1948
+17,1,60,1,18,test_should_strip_auth_https_upgrade@1950-1967@.\tests\test_requests.py,.\tests\test_requests.py,test_should_strip_auth_https_upgrade,test_should_strip_auth_https_upgrade( self ),1950,1967
+5,1,21,1,5,test_should_strip_auth_port_change@1969-1973@.\tests\test_requests.py,.\tests\test_requests.py,test_should_strip_auth_port_change,test_should_strip_auth_port_change( self ),1969,1973
+3,1,26,3,3,test_should_strip_auth_default_port@1984-1986@.\tests\test_requests.py,.\tests\test_requests.py,test_should_strip_auth_default_port,"test_should_strip_auth_default_port( self , old_uri , new_uri )",1984,1986
+12,2,90,2,18,test_manual_redirect_with_partial_body_read@1988-2005@.\tests\test_requests.py,.\tests\test_requests.py,test_manual_redirect_with_partial_body_read,"test_manual_redirect_with_partial_body_read( self , httpbin )",1988,2005
+4,1,33,1,4,test_prepare_body_position_non_stream@2007-2010@.\tests\test_requests.py,.\tests\test_requests.py,test_prepare_body_position_non_stream,test_prepare_body_position_non_stream( self ),2007,2010
+8,1,79,1,12,test_rewind_body@2012-2023@.\tests\test_requests.py,.\tests\test_requests.py,test_rewind_body,test_rewind_body( self ),2012,2023
+9,1,85,1,13,test_rewind_partially_read_body@2025-2037@.\tests\test_requests.py,.\tests\test_requests.py,test_rewind_partially_read_body,test_rewind_partially_read_body( self ),2025,2037
+2,1,12,2,2,test_rewind_body_no_seek.__init__@2041-2042@.\tests\test_requests.py,.\tests\test_requests.py,test_rewind_body_no_seek.__init__,"test_rewind_body_no_seek.__init__( self , data )",2041,2042
+2,1,7,1,2,test_rewind_body_no_seek.tell@2044-2045@.\tests\test_requests.py,.\tests\test_requests.py,test_rewind_body_no_seek.tell,test_rewind_body_no_seek.tell( self ),2044,2045
+2,1,6,1,2,test_rewind_body_no_seek.__iter__@2047-2048@.\tests\test_requests.py,.\tests\test_requests.py,test_rewind_body_no_seek.__iter__,test_rewind_body_no_seek.__iter__( self ),2047,2048
+11,1,69,1,19,test_rewind_body_no_seek@2039-2057@.\tests\test_requests.py,.\tests\test_requests.py,test_rewind_body_no_seek,test_rewind_body_no_seek( self ),2039,2057
+2,1,12,2,2,test_rewind_body_failed_seek.__init__@2061-2062@.\tests\test_requests.py,.\tests\test_requests.py,test_rewind_body_failed_seek.__init__,"test_rewind_body_failed_seek.__init__( self , data )",2061,2062
+2,1,7,1,2,test_rewind_body_failed_seek.tell@2064-2065@.\tests\test_requests.py,.\tests\test_requests.py,test_rewind_body_failed_seek.tell,test_rewind_body_failed_seek.tell( self ),2064,2065
+2,1,15,3,2,test_rewind_body_failed_seek.seek@2067-2068@.\tests\test_requests.py,.\tests\test_requests.py,test_rewind_body_failed_seek.seek,"test_rewind_body_failed_seek.seek( self , pos , whence = 0 )",2067,2068
+2,1,6,1,2,test_rewind_body_failed_seek.__iter__@2070-2071@.\tests\test_requests.py,.\tests\test_requests.py,test_rewind_body_failed_seek.__iter__,test_rewind_body_failed_seek.__iter__( self ),2070,2071
+12,1,71,1,22,test_rewind_body_failed_seek@2059-2080@.\tests\test_requests.py,.\tests\test_requests.py,test_rewind_body_failed_seek,test_rewind_body_failed_seek( self ),2059,2080
+2,1,12,2,2,test_rewind_body_failed_tell.__init__@2084-2085@.\tests\test_requests.py,.\tests\test_requests.py,test_rewind_body_failed_tell.__init__,"test_rewind_body_failed_tell.__init__( self , data )",2084,2085
+2,1,9,1,2,test_rewind_body_failed_tell.tell@2087-2088@.\tests\test_requests.py,.\tests\test_requests.py,test_rewind_body_failed_tell.tell,test_rewind_body_failed_tell.tell( self ),2087,2088
+2,1,6,1,2,test_rewind_body_failed_tell.__iter__@2090-2091@.\tests\test_requests.py,.\tests\test_requests.py,test_rewind_body_failed_tell.__iter__,test_rewind_body_failed_tell.__iter__( self ),2090,2091
+11,1,70,1,19,test_rewind_body_failed_tell@2082-2100@.\tests\test_requests.py,.\tests\test_requests.py,test_rewind_body_failed_tell,test_rewind_body_failed_tell( self ),2082,2100
+2,1,16,1,2,test_getattr_proxy_stream_follows_redirect.__init__@2106-2107@.\tests\test_requests.py,.\tests\test_requests.py,test_getattr_proxy_stream_follows_redirect.__init__,test_getattr_proxy_stream_follows_redirect.__init__( self ),2106,2107
+2,1,16,2,2,test_getattr_proxy_stream_follows_redirect.__getattr__@2109-2110@.\tests\test_requests.py,.\tests\test_requests.py,test_getattr_proxy_stream_follows_redirect.__getattr__,"test_getattr_proxy_stream_follows_redirect.__getattr__( self , name )",2109,2110
+8,1,43,2,14,test_getattr_proxy_stream_follows_redirect@2102-2115@.\tests\test_requests.py,.\tests\test_requests.py,test_getattr_proxy_stream_follows_redirect,"test_getattr_proxy_stream_follows_redirect( self , httpbin )",2102,2115
+6,2,42,2,6,_patch_adapter_gzipped_redirect.build_response@2122-2127@.\tests\test_requests.py,.\tests\test_requests.py,_patch_adapter_gzipped_redirect.build_response,"_patch_adapter_gzipped_redirect.build_response( * args , ** kwargs )",2122,2127
+6,1,36,3,13,_patch_adapter_gzipped_redirect@2117-2129@.\tests\test_requests.py,.\tests\test_requests.py,_patch_adapter_gzipped_redirect,"_patch_adapter_gzipped_redirect( self , session , url )",2117,2129
+5,1,34,2,5,test_redirect_with_wrong_gzipped_header@2131-2135@.\tests\test_requests.py,.\tests\test_requests.py,test_redirect_with_wrong_gzipped_header,"test_redirect_with_wrong_gzipped_header( self , httpbin )",2131,2135
+4,1,30,4,4,test_basic_auth_str_is_always_native@2148-2151@.\tests\test_requests.py,.\tests\test_requests.py,test_basic_auth_str_is_always_native,"test_basic_auth_str_is_always_native( self , username , password , auth_str )",2148,2151
+7,2,53,2,7,test_requests_history_is_saved@2153-2159@.\tests\test_requests.py,.\tests\test_requests.py,test_requests_history_is_saved,"test_requests_history_is_saved( self , httpbin )",2153,2159
+5,1,58,2,5,test_json_param_post_content_type_works@2161-2165@.\tests\test_requests.py,.\tests\test_requests.py,test_json_param_post_content_type_works,"test_json_param_post_content_type_works( self , httpbin )",2161,2165
+9,1,54,2,9,test_json_param_post_should_not_override_data_param@2167-2175@.\tests\test_requests.py,.\tests\test_requests.py,test_json_param_post_should_not_override_data_param,"test_json_param_post_should_not_override_data_param( self , httpbin )",2167,2175
+6,1,49,2,7,test_response_iter_lines@2177-2183@.\tests\test_requests.py,.\tests\test_requests.py,test_response_iter_lines,"test_response_iter_lines( self , httpbin )",2177,2183
+4,1,39,2,5,test_response_context_manager@2185-2189@.\tests\test_requests.py,.\tests\test_requests.py,test_response_context_manager,"test_response_context_manager( self , httpbin )",2185,2189
+6,1,49,2,8,test_unconsumed_session_response_closes_connection@2191-2198@.\tests\test_requests.py,.\tests\test_requests.py,test_unconsumed_session_response_closes_connection,"test_unconsumed_session_response_closes_connection( self , httpbin )",2191,2198
+5,1,51,2,7,test_response_iter_lines_reentrant@2201-2207@.\tests\test_requests.py,.\tests\test_requests.py,test_response_iter_lines_reentrant,"test_response_iter_lines_reentrant( self , httpbin )",2201,2207
+10,1,76,1,10,test_session_close_proxy_clear@2209-2218@.\tests\test_requests.py,.\tests\test_requests.py,test_session_close_proxy_clear,test_session_close_proxy_clear( self ),2209,2218
+4,1,26,1,4,test_proxy_auth@2220-2223@.\tests\test_requests.py,.\tests\test_requests.py,test_proxy_auth,test_proxy_auth( self ),2220,2223
+4,1,26,1,4,test_proxy_auth_empty_pass@2225-2228@.\tests\test_requests.py,.\tests\test_requests.py,test_proxy_auth_empty_pass,test_proxy_auth_empty_pass( self ),2225,2228
+8,1,52,2,10,test_response_json_when_content_is_None@2230-2239@.\tests\test_requests.py,.\tests\test_requests.py,test_response_json_when_content_is_None,"test_response_json_when_content_is_None( self , httpbin )",2230,2239
+6,1,41,1,9,test_response_without_release_conn@2241-2249@.\tests\test_requests.py,.\tests\test_requests.py,test_response_without_release_conn,test_response_without_release_conn( self ),2241,2249
+8,1,68,2,11,test_empty_stream_with_auth_does_not_set_content_length_header@2251-2261@.\tests\test_requests.py,.\tests\test_requests.py,test_empty_stream_with_auth_does_not_set_content_length_header,"test_empty_stream_with_auth_does_not_set_content_length_header( self , httpbin )",2251,2261
+8,1,68,2,11,test_stream_with_auth_does_not_set_transfer_encoding_header@2263-2273@.\tests\test_requests.py,.\tests\test_requests.py,test_stream_with_auth_does_not_set_transfer_encoding_header,"test_stream_with_auth_does_not_set_transfer_encoding_header( self , httpbin )",2263,2273
+7,2,66,2,10,test_chunked_upload_does_not_set_content_length_header@2275-2284@.\tests\test_requests.py,.\tests\test_requests.py,test_chunked_upload_does_not_set_content_length_header,"test_chunked_upload_does_not_set_content_length_header( self , httpbin )",2275,2284
+7,4,44,2,9,test_custom_redirect_mixin.get_redirect_target@2310-2318@.\tests\test_requests.py,.\tests\test_requests.py,test_custom_redirect_mixin.get_redirect_target,"test_custom_redirect_mixin.get_redirect_target( self , resp )",2310,2318
+22,1,151,2,43,test_custom_redirect_mixin@2286-2328@.\tests\test_requests.py,.\tests\test_requests.py,test_custom_redirect_mixin,"test_custom_redirect_mixin( self , httpbin )",2286,2328
+4,1,22,2,4,test_init@2340-2343@.\tests\test_requests.py,.\tests\test_requests.py,test_init,"test_init( self , cid )",2340,2343
+5,1,32,1,5,test_docstring_example@2345-2349@.\tests\test_requests.py,.\tests\test_requests.py,test_docstring_example,test_docstring_example( self ),2345,2349
+4,1,32,1,4,test_len@2351-2354@.\tests\test_requests.py,.\tests\test_requests.py,test_len,test_len( self ),2351,2354
+4,1,29,1,4,test_getitem@2356-2359@.\tests\test_requests.py,.\tests\test_requests.py,test_getitem,test_getitem( self ),2356,2359
+9,1,62,1,10,test_fixes_649@2361-2370@.\tests\test_requests.py,.\tests\test_requests.py,test_fixes_649,test_fixes_649( self ),2361,2370
+6,1,33,1,6,test_delitem@2372-2377@.\tests\test_requests.py,.\tests\test_requests.py,test_delitem,test_delitem( self ),2372,2377
+8,1,37,1,8,test_contains@2379-2386@.\tests\test_requests.py,.\tests\test_requests.py,test_contains,test_contains( self ),2379,2386
+8,1,60,1,8,test_get@2388-2395@.\tests\test_requests.py,.\tests\test_requests.py,test_get,test_get( self ),2388,2395
+10,1,82,1,10,test_update@2397-2406@.\tests\test_requests.py,.\tests\test_requests.py,test_update,test_update( self ),2397,2406
+4,1,36,1,4,test_update_retains_unchanged@2408-2411@.\tests\test_requests.py,.\tests\test_requests.py,test_update_retains_unchanged,test_update_retains_unchanged( self ),2408,2411
+4,1,39,1,4,test_iter@2413-2416@.\tests\test_requests.py,.\tests\test_requests.py,test_iter,test_iter( self ),2413,2416
+8,1,64,1,8,test_equality@2418-2425@.\tests\test_requests.py,.\tests\test_requests.py,test_equality,test_equality( self ),2418,2425
+4,1,37,1,4,test_setdefault@2427-2430@.\tests\test_requests.py,.\tests\test_requests.py,test_setdefault,test_setdefault( self ),2427,2430
+10,2,50,1,10,test_lower_items@2432-2441@.\tests\test_requests.py,.\tests\test_requests.py,test_lower_items,test_lower_items( self ),2432,2441
+11,2,66,1,11,test_preserve_key_case@2443-2453@.\tests\test_requests.py,.\tests\test_requests.py,test_preserve_key_case,test_preserve_key_case( self ),2443,2453
+13,2,82,1,13,test_preserve_last_key_case@2455-2467@.\tests\test_requests.py,.\tests\test_requests.py,test_preserve_last_key_case,test_preserve_last_key_case( self ),2455,2467
+11,1,41,1,11,test_copy@2469-2479@.\tests\test_requests.py,.\tests\test_requests.py,test_copy,test_copy( self ),2469,2479
+5,1,29,1,7,test_expires_valid_str@2485-2491@.\tests\test_requests.py,.\tests\test_requests.py,test_expires_valid_str,test_expires_valid_str( self ),2485,2491
+5,1,33,3,6,test_expires_invalid_int@2500-2505@.\tests\test_requests.py,.\tests\test_requests.py,test_expires_invalid_int,"test_expires_invalid_int( self , value , exception )",2500,2505
+5,1,29,1,7,test_expires_none@2507-2513@.\tests\test_requests.py,.\tests\test_requests.py,test_expires_none,test_expires_none( self ),2507,2513
+5,1,32,1,7,test_max_age_valid_int@2519-2525@.\tests\test_requests.py,.\tests\test_requests.py,test_max_age_valid_int,test_max_age_valid_int( self ),2519,2525
+5,1,29,1,7,test_max_age_invalid_str@2527-2533@.\tests\test_requests.py,.\tests\test_requests.py,test_max_age_invalid_str,test_max_age_invalid_str( self ),2527,2533
+5,2,47,2,5,test_stream_timeout@2537-2541@.\tests\test_requests.py,.\tests\test_requests.py,test_stream_timeout,"test_stream_timeout( self , httpbin )",2537,2541
+4,1,41,4,4,test_invalid_timeout@2550-2553@.\tests\test_requests.py,.\tests\test_requests.py,test_invalid_timeout,"test_invalid_timeout( self , httpbin , timeout , error_text )",2550,2553
+3,1,31,3,11,test_none_timeout@2556-2566@.\tests\test_requests.py,.\tests\test_requests.py,test_none_timeout,"test_none_timeout( self , httpbin , timeout )",2556,2566
+6,2,34,3,6,test_read_timeout@2571-2576@.\tests\test_requests.py,.\tests\test_requests.py,test_read_timeout,"test_read_timeout( self , httpbin , timeout )",2571,2576
+7,2,44,2,7,test_connect_timeout@2581-2587@.\tests\test_requests.py,.\tests\test_requests.py,test_connect_timeout,"test_connect_timeout( self , timeout )",2581,2587
+6,2,29,2,6,test_total_timeout_connect@2592-2597@.\tests\test_requests.py,.\tests\test_requests.py,test_total_timeout_connect,"test_total_timeout_connect( self , timeout )",2592,2597
+3,1,26,2,4,test_encoded_methods@2599-2602@.\tests\test_requests.py,.\tests\test_requests.py,test_encoded_methods,"test_encoded_methods( self , httpbin )",2599,2602
+6,1,34,2,6,__init__@2609-2614@.\tests\test_requests.py,.\tests\test_requests.py,__init__,"__init__( self , order_of_redirects )",2609,2614
+3,1,30,3,3,send@2616-2618@.\tests\test_requests.py,.\tests\test_requests.py,send,"send( self , * args , ** kwargs )",2616,2618
+12,2,86,1,14,build_response@2620-2633@.\tests\test_requests.py,.\tests\test_requests.py,build_response,build_response( self ),2620,2633
+4,1,27,1,4,_build_raw@2635-2638@.\tests\test_requests.py,.\tests\test_requests.py,_build_raw,_build_raw( self ),2635,2638
+5,1,41,0,6,test_json_encodes_as_bytes@2641-2646@.\tests\test_requests.py,.\tests\test_requests.py,test_json_encodes_as_bytes,test_json_encodes_as_bytes( ),2641,2646
+19,2,144,1,19,test_requests_are_updated_each_time@2649-2667@.\tests\test_requests.py,.\tests\test_requests.py,test_requests_are_updated_each_time,test_requests_are_updated_each_time( httpbin ),2649,2667
+10,1,77,3,11,test_proxy_env_vars_override_default@2679-2689@.\tests\test_requests.py,.\tests\test_requests.py,test_proxy_env_vars_override_default,"test_proxy_env_vars_override_default( var , url , proxy )",2679,2689
+6,1,42,1,9,test_data_argument_accepts_tuples@2700-2708@.\tests\test_requests.py,.\tests\test_requests.py,test_data_argument_accepts_tuples,test_data_argument_accepts_tuples( data ),2700,2708
+7,3,58,1,7,test_prepared_copy@2731-2737@.\tests\test_requests.py,.\tests\test_requests.py,test_prepared_copy,test_prepared_copy( kwargs ),2731,2737
+6,1,59,1,8,test_urllib3_retries@2740-2747@.\tests\test_requests.py,.\tests\test_requests.py,test_urllib3_retries,test_urllib3_retries( httpbin ),2740,2747
+7,2,52,1,8,test_urllib3_pool_connection_closed@2750-2757@.\tests\test_requests.py,.\tests\test_requests.py,test_urllib3_pool_connection_closed,test_urllib3_pool_connection_closed( httpbin ),2750,2757
+4,2,34,1,6,test_preparing_url.normalize_percent_encode@2793-2798@.\tests\test_requests.py,.\tests\test_requests.py,test_preparing_url.normalize_percent_encode,test_preparing_url.normalize_percent_encode( x ),2793,2798
+5,1,39,3,11,test_preparing_url@2792-2802@.\tests\test_requests.py,.\tests\test_requests.py,test_preparing_url,"test_preparing_url( self , url , expected )",2792,2802
+4,1,36,2,4,test_preparing_bad_url@2814-2817@.\tests\test_requests.py,.\tests\test_requests.py,test_preparing_bad_url,"test_preparing_bad_url( self , url )",2814,2817
+3,1,36,4,3,test_redirecting_to_bad_url@2820-2822@.\tests\test_requests.py,.\tests\test_requests.py,test_redirecting_to_bad_url,"test_redirecting_to_bad_url( self , httpbin , url , exception )",2820,2822
+4,1,35,3,10,test_url_mutation@2849-2858@.\tests\test_requests.py,.\tests\test_requests.py,test_url_mutation,"test_url_mutation( self , input , expected )",2849,2858
+4,1,41,4,8,test_parameters_for_nonstandard_schemes@2885-2892@.\tests\test_requests.py,.\tests\test_requests.py,test_parameters_for_nonstandard_schemes,"test_parameters_for_nonstandard_schemes( self , input , params , expected )",2885,2892
+4,1,42,2,4,test_post_json_nan@2894-2897@.\tests\test_requests.py,.\tests\test_requests.py,test_post_json_nan,"test_post_json_nan( self , httpbin )",2894,2897
+7,1,67,2,7,test_json_decode_compatibility@2899-2905@.\tests\test_requests.py,.\tests\test_requests.py,test_json_decode_compatibility,"test_json_decode_compatibility( self , httpbin )",2899,2905
+5,1,47,2,5,test_json_decode_persists_doc_attr@2907-2911@.\tests\test_requests.py,.\tests\test_requests.py,test_json_decode_persists_doc_attr,"test_json_decode_persists_doc_attr( self , httpbin )",2907,2911
+13,1,89,1,14,test_status_code_425@2913-2926@.\tests\test_requests.py,.\tests\test_requests.py,test_status_code_425,test_status_code_425( self ),2913,2926
+7,1,26,1,7,test_different_connection_pool_for_tls_settings_verify_True.response_handler@2929-2935@.\tests\test_requests.py,.\tests\test_requests.py,test_different_connection_pool_for_tls_settings_verify_True.response_handler,test_different_connection_pool_for_tls_settings_verify_True.response_handler( sock ),2929,2935
+19,1,119,1,30,test_different_connection_pool_for_tls_settings_verify_True@2928-2957@.\tests\test_requests.py,.\tests\test_requests.py,test_different_connection_pool_for_tls_settings_verify_True,test_different_connection_pool_for_tls_settings_verify_True( self ),2928,2957
+7,1,26,1,7,test_different_connection_pool_for_tls_settings_verify_bundle_expired_cert.response_handler@2962-2968@.\tests\test_requests.py,.\tests\test_requests.py,test_different_connection_pool_for_tls_settings_verify_bundle_expired_cert.response_handler,test_different_connection_pool_for_tls_settings_verify_bundle_expired_cert.response_handler( sock ),2962,2968
+21,1,124,1,32,test_different_connection_pool_for_tls_settings_verify_bundle_expired_cert@2959-2990@.\tests\test_requests.py,.\tests\test_requests.py,test_different_connection_pool_for_tls_settings_verify_bundle_expired_cert,"test_different_connection_pool_for_tls_settings_verify_bundle_expired_cert( self , )",2959,2990
+7,1,26,1,7,test_different_connection_pool_for_tls_settings_verify_bundle_unexpired_cert.response_handler@2995-3001@.\tests\test_requests.py,.\tests\test_requests.py,test_different_connection_pool_for_tls_settings_verify_bundle_unexpired_cert.response_handler,test_different_connection_pool_for_tls_settings_verify_bundle_unexpired_cert.response_handler( sock ),2995,3001
+21,1,120,1,31,test_different_connection_pool_for_tls_settings_verify_bundle_unexpired_cert@2992-3022@.\tests\test_requests.py,.\tests\test_requests.py,test_different_connection_pool_for_tls_settings_verify_bundle_unexpired_cert,"test_different_connection_pool_for_tls_settings_verify_bundle_unexpired_cert( self , )",2992,3022
+9,1,35,1,9,test_different_connection_pool_for_mtls_settings.response_handler@3027-3035@.\tests\test_requests.py,.\tests\test_requests.py,test_different_connection_pool_for_mtls_settings.response_handler,test_different_connection_pool_for_mtls_settings.response_handler( sock ),3027,3035
+26,1,135,1,38,test_different_connection_pool_for_mtls_settings@3024-3061@.\tests\test_requests.py,.\tests\test_requests.py,test_different_connection_pool_for_mtls_settings,test_different_connection_pool_for_mtls_settings( self ),3024,3061
+7,1,58,1,8,test_content_length_for_bytes_data@3064-3071@.\tests\test_requests.py,.\tests\test_requests.py,test_content_length_for_bytes_data,test_content_length_for_bytes_data( httpbin ),3064,3071
+6,1,55,1,7,test_content_length_for_string_data_counts_bytes@3078-3084@.\tests\test_requests.py,.\tests\test_requests.py,test_content_length_for_string_data_counts_bytes,test_content_length_for_string_data_counts_bytes( httpbin ),3078,3084
+8,1,42,0,8,test_json_decode_errors_are_serializable_deserializable@3087-3094@.\tests\test_requests.py,.\tests\test_requests.py,test_json_decode_errors_are_serializable_deserializable,test_json_decode_errors_are_serializable_deserializable( ),3087,3094
+3,1,21,1,4,setup@8-11@.\tests\test_structures.py,.\tests\test_structures.py,setup,setup( self ),8,11
+2,1,16,1,2,test_list@13-14@.\tests\test_structures.py,.\tests\test_structures.py,test_list,test_list( self ),13,14
+2,1,16,2,2,test_getitem@21-22@.\tests\test_structures.py,.\tests\test_structures.py,test_getitem,"test_getitem( self , key )",21,22
+3,1,21,2,3,test_delitem@25-27@.\tests\test_structures.py,.\tests\test_structures.py,test_delitem,"test_delitem( self , key )",25,27
+4,1,24,1,4,test_lower_items@29-32@.\tests\test_structures.py,.\tests\test_structures.py,test_lower_items,test_lower_items( self ),29,32
+2,1,14,1,2,test_repr@34-35@.\tests\test_structures.py,.\tests\test_structures.py,test_repr,test_repr( self ),34,35
+4,1,27,1,4,test_copy@37-40@.\tests\test_structures.py,.\tests\test_structures.py,test_copy,test_copy( self ),37,40
+2,1,19,3,2,test_instance_equality@50-51@.\tests\test_structures.py,.\tests\test_structures.py,test_instance_equality,"test_instance_equality( self , other , result )",50,51
+3,1,21,1,4,setup@56-59@.\tests\test_structures.py,.\tests\test_structures.py,setup,setup( self ),56,59
+2,1,14,1,2,test_repr@61-62@.\tests\test_structures.py,.\tests\test_structures.py,test_repr,test_repr( self ),61,62
+2,1,18,3,2,test_getitem@73-74@.\tests\test_structures.py,.\tests\test_structures.py,test_getitem,"test_getitem( self , key , value )",73,74
+2,1,20,3,2,test_get@77-78@.\tests\test_structures.py,.\tests\test_structures.py,test_get,"test_get( self , key , value )",77,78
+3,1,27,1,3,test_hasattr@80-82@.\tests\test_structures.py,.\tests\test_structures.py,test_hasattr,test_hasattr( self ),80,82
+4,1,32,1,4,test_getattr@84-87@.\tests\test_structures.py,.\tests\test_structures.py,test_getattr,test_getattr( self ),84,87
+2,1,22,3,2,test_getattr_default@90-91@.\tests\test_structures.py,.\tests\test_structures.py,test_getattr_default,"test_getattr_default( self , key , value )",90,91
+4,1,23,1,4,test_basic.handler@17-20@.\tests\test_testserver.py,.\tests\test_testserver.py,test_basic.handler,test_basic.handler( sock ),17,20
+11,1,68,1,17,test_basic@12-28@.\tests\test_testserver.py,.\tests\test_testserver.py,test_basic,test_basic( self ),12,28
+8,1,68,1,11,test_server_closes@30-40@.\tests\test_testserver.py,.\tests\test_testserver.py,test_server_closes,test_server_closes( self ),30,40
+9,1,56,1,12,test_text_response@42-53@.\tests\test_testserver.py,.\tests\test_testserver.py,test_text_response,test_text_response( self ),42,53
+6,1,52,1,7,test_basic_response@55-61@.\tests\test_testserver.py,.\tests\test_testserver.py,test_basic_response,test_basic_response( self ),55,61
+12,1,74,1,14,test_basic_waiting_server@63-76@.\tests\test_testserver.py,.\tests\test_testserver.py,test_basic_waiting_server,test_basic_waiting_server( self ),63,76
+10,2,77,1,15,test_multiple_requests@78-92@.\tests\test_testserver.py,.\tests\test_testserver.py,test_multiple_requests,test_multiple_requests( self ),78,92
+15,1,95,1,21,test_request_recovery@95-115@.\tests\test_testserver.py,.\tests\test_testserver.py,test_request_recovery,test_request_recovery( self ),95,115
+9,1,64,1,12,test_requests_after_timeout_are_not_received@117-128@.\tests\test_testserver.py,.\tests\test_testserver.py,test_requests_after_timeout_are_not_received,test_requests_after_timeout_are_not_received( self ),117,128
+10,1,66,1,13,test_request_recovery_with_bigger_timeout@130-142@.\tests\test_testserver.py,.\tests\test_testserver.py,test_request_recovery_with_bigger_timeout,test_request_recovery_with_bigger_timeout( self ),130,142
+6,1,37,1,8,test_server_finishes_on_error@144-151@.\tests\test_testserver.py,.\tests\test_testserver.py,test_server_finishes_on_error,test_server_finishes_on_error( self ),144,151
+5,1,26,1,7,test_server_finishes_when_no_connections@156-162@.\tests\test_testserver.py,.\tests\test_testserver.py,test_server_finishes_when_no_connections,test_server_finishes_when_no_connections( self ),156,162
+3,1,29,3,4,test_io_streams@61-64@.\tests\test_utils.py,.\tests\test_utils.py,test_io_streams,"test_io_streams( self , stream , value )",61,64
+4,1,26,1,5,test_super_len_correctly_calculates_len_of_partially_read_file@66-70@.\tests\test_utils.py,.\tests\test_utils.py,test_super_len_correctly_calculates_len_of_partially_read_file,test_super_len_correctly_calculates_len_of_partially_read_file( self ),66,70
+2,1,7,1,2,test_super_len_handles_files_raising_weird_errors_in_tell.__len__@77-78@.\tests\test_utils.py,.\tests\test_utils.py,test_super_len_handles_files_raising_weird_errors_in_tell.__len__,test_super_len_handles_files_raising_weird_errors_in_tell.__len__( self ),77,78
+2,1,9,1,2,test_super_len_handles_files_raising_weird_errors_in_tell.tell@80-81@.\tests\test_utils.py,.\tests\test_utils.py,test_super_len_handles_files_raising_weird_errors_in_tell.tell,test_super_len_handles_files_raising_weird_errors_in_tell.tell( self ),80,81
+5,1,24,2,11,test_super_len_handles_files_raising_weird_errors_in_tell@73-83@.\tests\test_utils.py,.\tests\test_utils.py,test_super_len_handles_files_raising_weird_errors_in_tell,"test_super_len_handles_files_raising_weird_errors_in_tell( self , error )",73,83
+2,1,9,1,2,test_super_len_tell_ioerror.tell@90-91@.\tests\test_utils.py,.\tests\test_utils.py,test_super_len_tell_ioerror.tell,test_super_len_tell_ioerror.tell( self ),90,91
+2,1,10,3,2,test_super_len_tell_ioerror.seek@93-94@.\tests\test_utils.py,.\tests\test_utils.py,test_super_len_tell_ioerror.seek,"test_super_len_tell_ioerror.seek( self , offset , whence )",93,94
+5,1,24,2,11,test_super_len_tell_ioerror@86-96@.\tests\test_utils.py,.\tests\test_utils.py,test_super_len_tell_ioerror,"test_super_len_tell_ioerror( self , error )",86,96
+2,1,12,1,2,test_string@98-99@.\tests\test_utils.py,.\tests\test_utils.py,test_string,test_string( self ),98,99
+6,1,51,5,6,test_file@108-113@.\tests\test_utils.py,.\tests\test_utils.py,test_file,"test_file( self , tmpdir , mode , warnings_num , recwarn )",108,113
+9,1,82,2,11,test_tarfile_member@115-125@.\tests\test_utils.py,.\tests\test_utils.py,test_tarfile_member,"test_tarfile_member( self , tmpdir )",115,125
+4,1,26,1,4,test_super_len_with__len__@127-130@.\tests\test_utils.py,.\tests\test_utils.py,test_super_len_with__len__,test_super_len_with__len__( self ),127,130
+2,1,10,1,2,test_super_len_with_no__len__.__init__@134-135@.\tests\test_utils.py,.\tests\test_utils.py,test_super_len_with_no__len__.__init__,test_super_len_with_no__len__.__init__( self ),134,135
+4,1,19,1,6,test_super_len_with_no__len__@132-137@.\tests\test_utils.py,.\tests\test_utils.py,test_super_len_with_no__len__,test_super_len_with_no__len__( self ),132,137
+5,1,33,1,5,test_super_len_with_tell@139-143@.\tests\test_utils.py,.\tests\test_utils.py,test_super_len_with_tell,test_super_len_with_tell( self ),139,143
+5,1,35,1,5,test_super_len_with_fileno@145-149@.\tests\test_utils.py,.\tests\test_utils.py,test_super_len_with_fileno,test_super_len_with_fileno( self ),145,149
+2,1,15,1,3,test_super_len_with_no_matches@151-153@.\tests\test_utils.py,.\tests\test_utils.py,test_super_len_with_no_matches,test_super_len_with_no_matches( self ),151,153
+7,1,55,3,7,test_works@157-163@.\tests\test_utils.py,.\tests\test_utils.py,test_works,"test_works( self , tmp_path , monkeypatch )",157,163
+7,1,51,3,7,test_not_vulnerable_to_bad_url_parsing@165-171@.\tests\test_utils.py,.\tests\test_utils.py,test_not_vulnerable_to_bad_url_parsing,"test_not_vulnerable_to_bad_url_parsing( self , tmp_path , monkeypatch )",165,171
+7,1,52,3,9,test_empty_default_credentials_ignored@173-181@.\tests\test_utils.py,.\tests\test_utils.py,test_empty_default_credentials_ignored,"test_empty_default_credentials_ignored( self , tmp_path , monkeypatch )",173,181
+2,1,16,3,2,test_valid@194-195@.\tests\test_utils.py,.\tests\test_utils.py,test_valid,"test_valid( self , value , expected )",194,195
+3,1,17,1,3,test_invalid@197-199@.\tests\test_utils.py,.\tests\test_utils.py,test_invalid,test_invalid( self ),197,199
+2,1,16,3,2,test_valid@213-214@.\tests\test_utils.py,.\tests\test_utils.py,test_valid,"test_valid( self , value , expected )",213,214
+2,1,14,1,2,test_is_filename@216-217@.\tests\test_utils.py,.\tests\test_utils.py,test_is_filename,test_is_filename( self ),216,217
+4,1,19,3,4,no_proxy@226-229@.\tests\test_utils.py,.\tests\test_utils.py,no_proxy,"no_proxy( self , request , monkeypatch )",226,229
+2,1,19,2,2,test_bypass@241-242@.\tests\test_utils.py,.\tests\test_utils.py,test_bypass,"test_bypass( self , url )",241,242
+2,1,19,2,2,test_not_bypass@252-253@.\tests\test_utils.py,.\tests\test_utils.py,test_not_bypass,"test_not_bypass( self , url )",252,253
+3,1,22,2,3,test_bypass_no_proxy_keyword@263-265@.\tests\test_utils.py,.\tests\test_utils.py,test_bypass_no_proxy_keyword,"test_bypass_no_proxy_keyword( self , url )",263,265
+4,1,32,3,6,test_not_bypass_no_proxy_keyword@277-282@.\tests\test_utils.py,.\tests\test_utils.py,test_not_bypass_no_proxy_keyword,"test_not_bypass_no_proxy_keyword( self , url , monkeypatch )",277,282
+2,1,10,1,2,test_valid@286-287@.\tests\test_utils.py,.\tests\test_utils.py,test_valid,test_valid( self ),286,287
+2,1,13,2,2,test_invalid@290-291@.\tests\test_utils.py,.\tests\test_utils.py,test_invalid,"test_invalid( self , value )",290,291
+2,1,10,1,2,test_valid@295-296@.\tests\test_utils.py,.\tests\test_utils.py,test_valid,test_valid( self ),295,296
+2,1,13,2,2,test_invalid@308-309@.\tests\test_utils.py,.\tests\test_utils.py,test_invalid,"test_invalid( self , value )",308,309
+2,1,12,1,2,test_valid@313-314@.\tests\test_utils.py,.\tests\test_utils.py,test_valid,test_valid( self ),313,314
+2,1,13,1,2,test_invalid@316-317@.\tests\test_utils.py,.\tests\test_utils.py,test_invalid,test_invalid( self ),316,317
+2,1,14,2,2,test_guess_filename_invalid@325-326@.\tests\test_utils.py,.\tests\test_utils.py,test_guess_filename_invalid,"test_guess_filename_invalid( self , value )",325,326
+5,1,45,3,5,test_guess_filename_valid@335-339@.\tests\test_utils.py,.\tests\test_utils.py,test_guess_filename_valid,"test_guess_filename_valid( self , value , expected_type )",335,339
+2,1,14,2,2,test_unzipped_paths_unchanged@352-353@.\tests\test_utils.py,.\tests\test_utils.py,test_unzipped_paths_unchanged,"test_unzipped_paths_unchanged( self , path )",352,353
+13,2,105,2,15,test_zipped_paths_extracted@355-369@.\tests\test_utils.py,.\tests\test_utils.py,test_zipped_paths_extracted,"test_zipped_paths_extracted( self , tmpdir )",355,369
+3,1,16,1,3,test_invalid_unc_path@371-373@.\tests\test_utils.py,.\tests\test_utils.py,test_invalid_unc_path,test_invalid_unc_path( self ),371,373
+3,1,17,1,3,test_none@377-379@.\tests\test_utils.py,.\tests\test_utils.py,test_none,test_none( self ),377,379
+4,1,27,2,4,test_pragmas@394-397@.\tests\test_utils.py,.\tests\test_utils.py,test_pragmas,"test_pragmas( self , content )",394,397
+7,1,25,1,7,test_precedence@399-405@.\tests\test_utils.py,.\tests\test_utils.py,test_precedence,test_precedence( self ),399,405
+3,1,22,2,3,test_encoded@422-424@.\tests\test_utils.py,.\tests\test_utils.py,test_encoded,"test_encoded( self , encoding )",422,424
+2,1,13,1,2,test_bad_utf_like_encoding@426-427@.\tests\test_utils.py,.\tests\test_utils.py,test_bad_utf_like_encoding,test_bad_utf_like_encoding( self ),426,427
+3,1,24,3,3,test_guess_by_bom@438-440@.\tests\test_utils.py,.\tests\test_utils.py,test_guess_by_bom,"test_guess_by_bom( self , encoding , expected )",438,440
+2,1,14,2,2,test_get_auth_from_url@472-473@.\tests\test_utils.py,.\tests\test_utils.py,test_get_auth_from_url,"test_get_auth_from_url( url , auth )",472,473
+2,1,15,2,3,test_requote_uri_with_unquoted_percents@491-493@.\tests\test_utils.py,.\tests\test_utils.py,test_requote_uri_with_unquoted_percents,"test_requote_uri_with_unquoted_percents( uri , expected )",491,493
+2,1,14,2,2,test_unquote_unreserved@511-512@.\tests\test_utils.py,.\tests\test_utils.py,test_unquote_unreserved,"test_unquote_unreserved( uri , expected )",511,512
+2,1,14,2,2,test_dotted_netmask@523-524@.\tests\test_utils.py,.\tests\test_utils.py,test_dotted_netmask,"test_dotted_netmask( mask , expected )",523,524
+2,1,19,3,3,test_select_proxies@563-565@.\tests\test_utils.py,.\tests\test_utils.py,test_select_proxies,"test_select_proxies( url , expected , proxies )",563,565
+2,1,14,2,2,test_parse_dict_header@575-576@.\tests\test_utils.py,.\tests\test_utils.py,test_parse_dict_header,"test_parse_dict_header( value , expected )",575,576
+2,1,14,2,2,test__parse_content_type_header@635-636@.\tests\test_utils.py,.\tests\test_utils.py,test__parse_content_type_header,"test__parse_content_type_header( value , expected )",635,636
+2,1,14,2,2,test_get_encoding_from_headers@654-655@.\tests\test_utils.py,.\tests\test_utils.py,test_get_encoding_from_headers,"test_get_encoding_from_headers( value , expected )",654,655
+5,4,57,2,6,test_iter_slices@669-674@.\tests\test_utils.py,.\tests\test_utils.py,test_iter_slices,"test_iter_slices( value , length )",669,674
+2,1,14,2,2,test_parse_header_links@696-697@.\tests\test_utils.py,.\tests\test_utils.py,test_parse_header_links,"test_parse_header_links( value , expected )",696,697
+2,1,16,2,2,test_prepend_scheme_if_needed@713-714@.\tests\test_utils.py,.\tests\test_utils.py,test_prepend_scheme_if_needed,"test_prepend_scheme_if_needed( value , expected )",713,714
+2,1,14,2,2,test_to_native_string@725-726@.\tests\test_utils.py,.\tests\test_utils.py,test_to_native_string,"test_to_native_string( value , expected )",725,726
+2,1,14,2,2,test_urldefragauth@740-741@.\tests\test_utils.py,.\tests\test_utils.py,test_urldefragauth,"test_urldefragauth( url , expected )",740,741
+10,1,39,3,13,test_should_bypass_proxies@759-771@.\tests\test_utils.py,.\tests\test_utils.py,test_should_bypass_proxies,"test_should_bypass_proxies( url , expected , monkeypatch )",759,771
+4,1,32,2,7,test_should_bypass_proxies_pass_only_hostname@787-793@.\tests\test_utils.py,.\tests\test_utils.py,test_should_bypass_proxies_pass_only_hostname,"test_should_bypass_proxies_pass_only_hostname( url , expected )",787,793
+5,2,44,1,8,test_add_dict_to_cookiejar@803-810@.\tests\test_utils.py,.\tests\test_utils.py,test_add_dict_to_cookiejar,test_add_dict_to_cookiejar( cookiejar ),803,810
+2,1,14,2,2,test_unicode_is_ascii@821-822@.\tests\test_utils.py,.\tests\test_utils.py,test_unicode_is_ascii,"test_unicode_is_ascii( value , expected )",821,822
+3,1,24,3,7,test_should_bypass_proxies_no_proxy@838-844@.\tests\test_utils.py,.\tests\test_utils.py,test_should_bypass_proxies_no_proxy,"test_should_bypass_proxies_no_proxy( url , expected , monkeypatch )",838,844
+3,1,22,2,7,test_should_bypass_proxies_no_proxy_domain_boundary@861-867@.\tests\test_utils.py,.\tests\test_utils.py,test_should_bypass_proxies_no_proxy_domain_boundary,"test_should_bypass_proxies_no_proxy_domain_boundary( url , expected )",861,867
+2,1,6,1,2,test_should_bypass_proxies_win_registry.Close@895-896@.\tests\test_utils.py,.\tests\test_utils.py,test_should_bypass_proxies_win_registry.Close,test_should_bypass_proxies_win_registry.Close( self ),895,896
+2,1,9,2,2,test_should_bypass_proxies_win_registry.OpenKey@901-902@.\tests\test_utils.py,.\tests\test_utils.py,test_should_bypass_proxies_win_registry.OpenKey,"test_should_bypass_proxies_win_registry.OpenKey( key , subkey )",901,902
+7,4,38,2,8,test_should_bypass_proxies_win_registry.QueryValueEx@904-911@.\tests\test_utils.py,.\tests\test_utils.py,test_should_bypass_proxies_win_registry.QueryValueEx,"test_should_bypass_proxies_win_registry.QueryValueEx( key , value_name )",904,911
+18,2,115,4,35,test_should_bypass_proxies_win_registry@886-920@.\tests\test_utils.py,.\tests\test_utils.py,test_should_bypass_proxies_win_registry,"test_should_bypass_proxies_win_registry( url , expected , override , monkeypatch )",886,920
+2,1,6,1,2,test_should_bypass_proxies_win_registry_bad_values.Close@931-932@.\tests\test_utils.py,.\tests\test_utils.py,test_should_bypass_proxies_win_registry_bad_values.Close,test_should_bypass_proxies_win_registry_bad_values.Close( self ),931,932
+2,1,9,2,2,test_should_bypass_proxies_win_registry_bad_values.OpenKey@936-937@.\tests\test_utils.py,.\tests\test_utils.py,test_should_bypass_proxies_win_registry_bad_values.OpenKey,"test_should_bypass_proxies_win_registry_bad_values.OpenKey( key , subkey )",936,937
+6,4,30,2,7,test_should_bypass_proxies_win_registry_bad_values.QueryValueEx@939-945@.\tests\test_utils.py,.\tests\test_utils.py,test_should_bypass_proxies_win_registry_bad_values.QueryValueEx,"test_should_bypass_proxies_win_registry_bad_values.QueryValueEx( key , value_name )",939,945
+14,1,83,1,30,test_should_bypass_proxies_win_registry_bad_values@924-953@.\tests\test_utils.py,.\tests\test_utils.py,test_should_bypass_proxies_win_registry_bad_values,test_should_bypass_proxies_win_registry_bad_values( monkeypatch ),924,953
+5,1,43,2,7,test_set_environ@965-971@.\tests\test_utils.py,.\tests\test_utils.py,test_set_environ,"test_set_environ( env_name , value )",965,971
+5,1,37,0,8,test_set_environ_raises_exception@974-981@.\tests\test_utils.py,.\tests\test_utils.py,test_set_environ_raises_exception,test_set_environ_raises_exception( ),974,981
+2,1,6,1,2,test_should_bypass_proxies_win_registry_ProxyOverride_value.Close@992-993@.\tests\test_utils.py,.\tests\test_utils.py,test_should_bypass_proxies_win_registry_ProxyOverride_value.Close,test_should_bypass_proxies_win_registry_ProxyOverride_value.Close( self ),992,993
+2,1,9,2,2,test_should_bypass_proxies_win_registry_ProxyOverride_value.OpenKey@997-998@.\tests\test_utils.py,.\tests\test_utils.py,test_should_bypass_proxies_win_registry_ProxyOverride_value.OpenKey,"test_should_bypass_proxies_win_registry_ProxyOverride_value.OpenKey( key , subkey )",997,998
+8,4,30,2,8,test_should_bypass_proxies_win_registry_ProxyOverride_value.QueryValueEx@1000-1007@.\tests\test_utils.py,.\tests\test_utils.py,test_should_bypass_proxies_win_registry_ProxyOverride_value.QueryValueEx,"test_should_bypass_proxies_win_registry_ProxyOverride_value.QueryValueEx( key , value_name )",1000,1007
+12,1,67,1,29,test_should_bypass_proxies_win_registry_ProxyOverride_value@985-1013@.\tests\test_utils.py,.\tests\test_utils.py,test_should_bypass_proxies_win_registry_ProxyOverride_value,test_should_bypass_proxies_win_registry_ProxyOverride_value( monkeypatch ),985,1013
+12,4,67,1,12,override_environ@6-17@.\tests\utils.py,.\tests\utils.py,override_environ,override_environ( ** kwargs ),6,17

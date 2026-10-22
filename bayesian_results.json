@@ -1,0 +1,195 @@
+{
+  "f1": 0.7755071182357538,
+  "evaluation_method": "single stratified held-out test split",
+  "test_size": 0.25,
+  "accuracy": 0.78125,
+  "edges": [
+    {
+      "source": "AvgComplexity",
+      "target": "MaxComplexity"
+    },
+    {
+      "source": "MaxComplexity",
+      "target": "TotalLOC"
+    },
+    {
+      "source": "TotalLOC",
+      "target": "FuncCount"
+    },
+    {
+      "source": "TotalLOC",
+      "target": "Maintainability"
+    },
+    {
+      "source": "TotalLOC",
+      "target": "NumAuthors"
+    },
+    {
+      "source": "NumAuthors",
+      "target": "Risk"
+    },
+    {
+      "source": "NumAuthors",
+      "target": "CodeAge"
+    },
+    {
+      "source": "CodeAge",
+      "target": "CouplingCount"
+    },
+    {
+      "source": "CouplingCount",
+      "target": "CouplingDegree"
+    }
+  ],
+  "nodes": [
+    "AvgComplexity",
+    "MaxComplexity",
+    "TotalLOC",
+    "FuncCount",
+    "Maintainability",
+    "NumAuthors",
+    "CodeAge",
+    "CouplingCount",
+    "CouplingDegree",
+    "Risk"
+  ],
+  "discretisation_bins": {
+    "avg_complexity": {
+      "method": "rank_then_quantile",
+      "labels": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "edges": [
+        1.0,
+        127.66666666666666,
+        254.33333333333331,
+        381.0
+      ]
+    },
+    "max_complexity": {
+      "method": "rank_then_quantile",
+      "labels": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "edges": [
+        1.0,
+        127.66666666666666,
+        254.33333333333331,
+        381.0
+      ]
+    },
+    "total_nloc": {
+      "method": "quantile",
+      "labels": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "edges": [
+        2.0,
+        23.0,
+        123.33333333333331,
+        2064.0
+      ]
+    },
+    "function_count": {
+      "method": "quantile",
+      "labels": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "edges": [
+        1.0,
+        3.666666666666657,
+        14.0,
+        282.0
+      ]
+    },
+    "maintainability_index": {
+      "method": "quantile",
+      "labels": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "edges": [
+        0.0,
+        47.22970530822665,
+        69.78677344868895,
+        100.0
+      ]
+    },
+    "num_authors": {
+      "method": "quantile",
+      "labels": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "edges": [
+        1.0,
+        2.0,
+        7.0,
+        96.0
+      ]
+    },
+    "code_age_days": {
+      "method": "quantile",
+      "labels": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "edges": [
+        15.0,
+        2203.3333333333335,
+        2521.999999999999,
+        6011.0
+      ]
+    },
+    "coupling_partner_count": {
+      "method": "rank_then_quantile",
+      "labels": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "edges": [
+        1.0,
+        127.66666666666666,
+        254.33333333333331,
+        381.0
+      ]
+    },
+    "avg_coupling_degree": {
+      "method": "rank_then_quantile",
+      "labels": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "edges": [
+        1.0,
+        127.66666666666666,
+        254.33333333333331,
+        381.0
+      ]
+    }
+  },
+  "rows": 381,
+  "random_seed": 42,
+  "library_versions": {
+    "pgmpy": "1.1.2",
+    "pandas": "3.0.1",
+    "numpy": "2.4.2",
+    "scikit-learn": "1.8.0",
+    "networkx": "3.7",
+    "matplotlib": "3.10.8"
+  },
+  "timestamp_utc": "2026-10-17T09:58:50.203245+00:00"
+}

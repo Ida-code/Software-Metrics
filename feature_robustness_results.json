@@ -1,0 +1,287 @@
+{
+  "generated_at_utc": "2026-10-22T07:53:01.006791+00:00",
+  "dataset": "full_merged_dataset.csv",
+  "rows": 381,
+  "risk_cutoffs": {
+    "low_max": 7.0,
+    "medium_max": 27.0
+  },
+  "cross_validated_f1_all_features": 0.7844377555393713,
+  "correlations": [
+    {
+      "feature": "num_authors",
+      "label": "Number of Authors",
+      "spearman_r": 0.8384656928639903,
+      "p_value": 5.8730805072583045e-102
+    },
+    {
+      "feature": "total_nloc",
+      "label": "Total Lines of Code",
+      "spearman_r": 0.7463902718070986,
+      "p_value": 5.172293140917861e-69
+    },
+    {
+      "feature": "function_count",
+      "label": "Number of Functions",
+      "spearman_r": 0.6718792968558981,
+      "p_value": 2.3408532980414913e-51
+    },
+    {
+      "feature": "maintainability_index",
+      "label": "Maintainability Index",
+      "spearman_r": -0.6201055848798155,
+      "p_value": 7.458350173431071e-42
+    },
+    {
+      "feature": "max_complexity",
+      "label": "Max Complexity",
+      "spearman_r": 0.5865234026984687,
+      "p_value": 1.393034233325777e-36
+    },
+    {
+      "feature": "code_age_days",
+      "label": "Code Age (days)",
+      "spearman_r": 0.45451194539743295,
+      "p_value": 8.058349003971318e-21
+    },
+    {
+      "feature": "coupling_partner_count",
+      "label": "Coupling Partner Count",
+      "spearman_r": 0.4514155814775,
+      "p_value": 1.583402890102617e-20
+    },
+    {
+      "feature": "avg_complexity",
+      "label": "Average Complexity",
+      "spearman_r": 0.44262539994299543,
+      "p_value": 1.0380785374564005e-19
+    },
+    {
+      "feature": "avg_coupling_degree",
+      "label": "Avg Coupling Degree",
+      "spearman_r": 0.4367058722338492,
+      "p_value": 3.572486803664103e-19
+    }
+  ],
+  "permutation_importance": [
+    {
+      "feature": "avg_complexity",
+      "label": "Average Complexity",
+      "f1_drop_mean": -0.02214832646635893,
+      "f1_drop_std": 0.008593094452889543,
+      "reliably_above_noise": false
+    },
+    {
+      "feature": "max_complexity",
+      "label": "Max Complexity",
+      "f1_drop_mean": -0.02858409551754468,
+      "f1_drop_std": 0.013814520300041657,
+      "reliably_above_noise": false
+    },
+    {
+      "feature": "total_nloc",
+      "label": "Total Lines of Code",
+      "f1_drop_mean": -0.0028382441598974297,
+      "f1_drop_std": 0.02834229515202512,
+      "reliably_above_noise": false
+    },
+    {
+      "feature": "function_count",
+      "label": "Number of Functions",
+      "f1_drop_mean": -0.017879346478303127,
+      "f1_drop_std": 0.01743588687899508,
+      "reliably_above_noise": false
+    },
+    {
+      "feature": "maintainability_index",
+      "label": "Maintainability Index",
+      "f1_drop_mean": -0.03066849559912601,
+      "f1_drop_std": 0.02648399945925863,
+      "reliably_above_noise": false
+    },
+    {
+      "feature": "num_authors",
+      "label": "Number of Authors",
+      "f1_drop_mean": 0.25360441460720634,
+      "f1_drop_std": 0.035765009044081704,
+      "reliably_above_noise": true
+    },
+    {
+      "feature": "code_age_days",
+      "label": "Code Age (days)",
+      "f1_drop_mean": 0.023135037840468584,
+      "f1_drop_std": 0.023366509943735462,
+      "reliably_above_noise": false
+    },
+    {
+      "feature": "coupling_partner_count",
+      "label": "Coupling Partner Count",
+      "f1_drop_mean": 0.007712270661449109,
+      "f1_drop_std": 0.014142029850255118,
+      "reliably_above_noise": false
+    },
+    {
+      "feature": "avg_coupling_degree",
+      "label": "Avg Coupling Degree",
+      "f1_drop_mean": 0.009760715916836108,
+      "f1_drop_std": 0.015484550967912064,
+      "reliably_above_noise": false
+    }
+  ],
+  "drop_one_feature": [
+    {
+      "feature": "avg_complexity",
+      "label": "Average Complexity",
+      "f1_without_feature": 0.7818388379660036,
+      "change_vs_all": -0.0025989175733677206
+    },
+    {
+      "feature": "max_complexity",
+      "label": "Max Complexity",
+      "f1_without_feature": 0.7905767778911159,
+      "change_vs_all": 0.006139022351744572
+    },
+    {
+      "feature": "total_nloc",
+      "label": "Total Lines of Code",
+      "f1_without_feature": 0.7686364618355348,
+      "change_vs_all": -0.01580129370383654
+    },
+    {
+      "feature": "function_count",
+      "label": "Number of Functions",
+      "f1_without_feature": 0.7857942651651514,
+      "change_vs_all": 0.0013565096257800446
+    },
+    {
+      "feature": "maintainability_index",
+      "label": "Maintainability Index",
+      "f1_without_feature": 0.7835630014063556,
+      "change_vs_all": -0.0008747541330157427
+    },
+    {
+      "feature": "num_authors",
+      "label": "Number of Authors",
+      "f1_without_feature": 0.7113462169954087,
+      "change_vs_all": -0.07309153854396266
+    },
+    {
+      "feature": "code_age_days",
+      "label": "Code Age (days)",
+      "f1_without_feature": 0.7739370249026621,
+      "change_vs_all": -0.010500730636709199
+    },
+    {
+      "feature": "coupling_partner_count",
+      "label": "Coupling Partner Count",
+      "f1_without_feature": 0.7844724789575858,
+      "change_vs_all": 3.472341821442182e-05
+    },
+    {
+      "feature": "avg_coupling_degree",
+      "label": "Avg Coupling Degree",
+      "f1_without_feature": 0.7815280424406792,
+      "change_vs_all": -0.002909713098692146
+    }
+  ],
+  "feature_groups": [
+    {
+      "label": "Static code metrics only (complexity, size, maintainability)",
+      "features": [
+        "avg_complexity",
+        "max_complexity",
+        "total_nloc",
+        "function_count",
+        "maintainability_index"
+      ],
+      "f1_macro": 0.6544760336007907
+    },
+    {
+      "label": "Static + code age",
+      "features": [
+        "avg_complexity",
+        "max_complexity",
+        "total_nloc",
+        "function_count",
+        "maintainability_index",
+        "code_age_days"
+      ],
+      "f1_macro": 0.6949740275761598
+    },
+    {
+      "label": "Static + number of authors",
+      "features": [
+        "avg_complexity",
+        "max_complexity",
+        "total_nloc",
+        "function_count",
+        "maintainability_index",
+        "num_authors"
+      ],
+      "f1_macro": 0.7599926154274672
+    },
+    {
+      "label": "Static + authors + code age",
+      "features": [
+        "avg_complexity",
+        "max_complexity",
+        "total_nloc",
+        "function_count",
+        "maintainability_index",
+        "num_authors",
+        "code_age_days"
+      ],
+      "f1_macro": 0.790126344408081
+    },
+    {
+      "label": "All 9 features",
+      "features": [
+        "avg_complexity",
+        "max_complexity",
+        "total_nloc",
+        "function_count",
+        "maintainability_index",
+        "num_authors",
+        "code_age_days",
+        "coupling_partner_count",
+        "avg_coupling_degree"
+      ],
+      "f1_macro": 0.7844377555393713
+    }
+  ],
+  "author_context": [
+    {
+      "feature": "n-revs",
+      "label": "Revision count",
+      "spearman_r": 0.8384656928639903,
+      "p_value": 5.8730805072583045e-102
+    },
+    {
+      "feature": "total_nloc",
+      "label": "Total Lines of Code",
+      "spearman_r": 0.6944020275474193,
+      "p_value": 4.0192110248645414e-56
+    },
+    {
+      "feature": "code_age_days",
+      "label": "Code Age (days)",
+      "spearman_r": 0.5379777416478843,
+      "p_value": 5.7473587874071414e-30
+    },
+    {
+      "feature": "function_count",
+      "label": "Number of Functions",
+      "spearman_r": 0.6405744981362465,
+      "p_value": 2.1565490809597534e-45
+    },
+    {
+      "feature": "max_complexity",
+      "label": "Max Complexity",
+      "spearman_r": 0.5278667047890121,
+      "p_value": 1.014728928622459e-28
+    }
+  ],
+  "permutation_test_size": 0.25,
+  "permutation_repeats": 30,
+  "cross_validation_folds": 5
+}
